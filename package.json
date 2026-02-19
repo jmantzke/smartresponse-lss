@@ -1,0 +1,13 @@
+{
+  "name": "smartresponse",
+  "version": "1.0.0",
+  "description": "LSS Demo Project",
+  "scripts": {
+    "sass": "sass style.scss style.css",
+    "sass:watch": "sass --watch style.scss:style.css",
+    "sass:build": "sass style.scss style.css --style=compressed"
+  },
+  "devDependencies": {
+    "sass": "^1.70.0"
+  }
+}

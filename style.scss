@@ -1,0 +1,85 @@
+// Partials
+@use 'colors' as *;
+@use 'spacing' as *;
+@use 'typography' as *;
+@use 'measurements' as *;
+
+// Reset and Base Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.6;
+  height: 100%;
+}
+
+body {
+  @include flexbox(vertical);
+  font-family: $font-family;
+  color: $text-color;
+  background-color: $background-body;
+  height: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+// Top Bar
+.top-bar {
+  @include flexbox(horizontal);
+  
+  .main-heading {
+    color: $background-color;
+    padding: $spacing-md;
+  }
+}
+
+// Main Content
+.main-content {
+  @include flexbox(vertical);
+  max-width: $content-max-width;
+  width: 100%;
+  padding: $spacing-xl;
+  background-color: $white;
+  border-radius: $border-radius;
+  box-shadow: 0 2px 8px $shadow-color;
+
+  h3 {
+    color: $primary-color;
+    font-size: 2rem;
+    @include heading-style($font-weight-100);
+    margin-bottom: $spacing-unit;
+    text-align: center;
+  }
+}
+
+.map-demo {
+  width: 100%;
+  height: $map-height;
+  border-radius: $border-radius;
+  margin-top: $spacing-lg;
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .main-content {
+    padding: $spacing-unit;
+    margin: $spacing-unit;
+
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    h3 {
+      font-size: 1.25rem;
+    }
+  }
+}
