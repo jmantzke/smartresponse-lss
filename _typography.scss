@@ -26,6 +26,10 @@ $font-weight-900: 900;
 h1, h2 {
   font-family: $font-heading-primary;
   @include heading-style();
+  
+  span {
+    font-family: inherit;
+  }
 }
 
 h3 {

@@ -1,7 +1,12 @@
 // Layout Measurements
 
-// Google Maps
-
+// Widths
+$full-viewport-width: 100vw;
 
 // Heights
 $map-height: 400px;
+
+// Mixins
+@mixin full-width {
+  width: $full-viewport-width;
+}

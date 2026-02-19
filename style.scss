@@ -3,6 +3,7 @@
 @use 'spacing' as *;
 @use 'typography' as *;
 @use 'measurements' as *;
+@use 'layout' as *;
 
 // Reset and Base Styles
 * {
@@ -24,17 +25,21 @@ body {
   background-color: $background-body;
   height: 100%;
   min-height: 100vh;
-  justify-content: center;
+  justify-content: $justify-start;
   align-items: center;
 }
 
 // Top Bar
 .top-bar {
   @include flexbox(horizontal);
+  @include full-width;
   
   .main-heading {
     color: $background-color;
     padding: $spacing-md;
+    .highlight {
+      color: $foundation-primary-primary-accent-70;
+    }
   }
 }
 

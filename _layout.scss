@@ -1,0 +1,21 @@
+// Layout Variables
+
+// Flexbox Justify Content
+$justify-start: flex-start;
+$justify-end: flex-end;
+$justify-center: center;
+$justify-between: space-between;
+$justify-around: space-around;
+$justify-evenly: space-evenly;
+
+// Flexbox Align Items
+$align-start: flex-start;
+$align-end: flex-end;
+$align-center: center;
+$align-stretch: stretch;
+$align-baseline: baseline;
+
+// CSS Grid
+$grid-gap: 1rem;
+$grid-gap-sm: 0.5rem;
+$grid-gap-lg: 2rem;
