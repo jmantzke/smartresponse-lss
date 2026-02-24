@@ -1,6 +1,10 @@
+@use 'colors' as *;
+
+// Adobe Fonts (Typekit)
+@import url("https://use.typekit.net/nqe6jwf.css");
+
 // Font Families
-// Adobe Fonts
-$font-heading-primary: octin-stencil, sans-serif;
+$font-heading-primary: mozilla-headline, sans-serif;
 $font-heading-secondary: paralucent-stencil, sans-serif;
 $font-body: ibm-plex-sans, sans-serif;
 $font-family: $font-body;
@@ -23,22 +27,21 @@ $font-weight-900: 900;
 }
 
 // Typography Styles
-h1, h2 {
+h1, h2, h3, h4 {
   font-family: $font-heading-primary;
   @include heading-style();
-  
+
   span {
     font-family: inherit;
   }
 }
 
-h3 {
-  font-family: $font-heading-secondary;
-  @include heading-style();
+h1 {
+  color: $foundation-primary-primary-accent-70;
 }
 
-h4, h5, h6 {
-  font-family: $font-heading-secondary;
+h5, h6 {
+  font-family: $font-body;
   font-weight: 200;
   font-style: normal;
 }

@@ -62,11 +62,20 @@ body {
   }
 }
 
+  
+  // Footer
+
+  .footer {
+    padding-top: $spacing-md;
+    padding-bottom: $spacing-md;
+    color: $body-on-dark;
+  }
+
 .map-demo {
   width: 100%;
   height: $map-height;
   border-radius: $border-radius;
-  margin-top: $spacing-lg;
+  margin-top: $spacing-md;
 }
 
 // Responsive Design
