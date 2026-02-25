@@ -1,0 +1,57 @@
+{
+  "screens": {
+    "columns": {
+      "xs": { "$type": "number", "$value": "{primitives.size.1}" },
+      "sm": { "$type": "number", "$value": "{primitives.size.4}" },
+      "md": { "$type": "number", "$value": "{primitives.size.8}" },
+      "lg": { "$type": "number", "$value": "{primitives.size.12}" },
+      "xl": { "$type": "number", "$value": "{primitives.size.12}" }
+    },
+
+    "margin": {
+      "xs": { "$type": "number", "$value": "{primitives.size.16}" },
+      "sm": { "$type": "number", "$value": "{primitives.size.24}" },
+      "md": { "$type": "number", "$value": "{primitives.size.32}" },
+      "lg": {
+        "$type": "string",
+        "$value": "clamp(32px, 5vw, 48px)"
+      },
+      "xl": {
+        "$type": "string",
+        "$value": "clamp(48px, 6vw, 64px)"
+      }
+    },
+
+    "gutter": {
+      "xs": { "$type": "number", "$value": "{primitives.size.0}" },
+      "sm": { "$type": "number", "$value": "{primitives.size.8}" },
+      "md": { "$type": "number", "$value": "{primitives.size.16}" },
+      "lg": { "$type": "number", "$value": "{primitives.size.24}" },
+      "xl": { "$type": "number", "$value": "{primitives.size.32}" }
+    },
+
+    "minWidth": {
+      "xs": { "$type": "number", "$value": "{primitives.size.0}" },
+      "sm": { "$type": "number", "$value": "{primitives.size.480}" },
+      "md": { "$type": "number", "$value": "{primitives.size.768}" },
+      "lg": { "$type": "number", "$value": "{primitives.size.1024}" },
+      "xl": { "$type": "number", "$value": "{primitives.size.1440}" }
+    },
+
+    "maxWidth": {
+      "xs": { "$type": "number", "$value": "{primitives.size.479}" },
+      "sm": { "$type": "number", "$value": "{primitives.size.767}" },
+      "md": { "$type": "number", "$value": "{primitives.size.1023}" },
+      "lg": { "$type": "number", "$value": "{primitives.size.1439}" },
+      "xl": { "$type": "number", "$value": "{primitives.size.1920}" }
+    },
+
+    "height": {
+      "xs": { "$type": "number", "$value": "{primitives.size.720}" },
+      "sm": { "$type": "number", "$value": "{primitives.size.800}" },
+      "md": { "$type": "number", "$value": "{primitives.size.900}" },
+      "lg": { "$type": "number", "$value": "{primitives.size.900}" },
+      "xl": { "$type": "number", "$value": "{primitives.size.1080}" }
+    }
+  }
+}
