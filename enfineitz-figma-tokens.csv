@@ -1,0 +1,49 @@
+Category,Token Name,Type,Description,Value Details
+grid,xs,custom-grid,The large breakpoint,pattern: columns | gutterSize: 4 | alignment: stretch | count: 4 | offset: 8
+grid,sm,custom-grid,Small breakpoint,pattern: columns | gutterSize: 4 | alignment: stretch | count: 8 | offset: 8
+grid,md,custom-grid,,pattern: columns | gutterSize: 0 | alignment: stretch | count: 5 | offset: 0
+grid,home,custom-grid,Home page grid,pattern: columns | gutterSize: 16 | alignment: stretch | count: 4 | offset: 48
+font,hero1,custom-fontStyle,The largest hero text,fontSize: 340 | textDecoration: none | fontFamily: Mozilla Headline Expanded | fontWeight: 200 | fontStyle: normal | fontStretch: normal | letterSpacing: -1 | lineHeight: 408 | paragraphIndent: 0 | paragraphSpacing: 0 | textCase: none
+font,hero2,custom-fontStyle,Very large display,fontSize: 128 | textDecoration: none | fontFamily: Mozilla Headline Expanded | fontWeight: 300 | fontStyle: normal | fontStretch: normal | letterSpacing: -1 | lineHeight: 153.6 | paragraphIndent: 0 | paragraphSpacing: 0 | textCase: none
+font,h1,custom-fontStyle,Very large display,fontSize: 56 | textDecoration: none | fontFamily: Mozilla Headline | fontWeight: 300 | fontStyle: normal | fontStretch: normal | letterSpacing: 0 | lineHeight: 67.2 | paragraphIndent: 0 | paragraphSpacing: 0 | textCase: none
+font,h2,custom-fontStyle,Header level 2,fontSize: 48 | textDecoration: none | fontFamily: Mozilla Headline | fontWeight: 300 | fontStyle: normal | fontStretch: normal | letterSpacing: 0 | lineHeight: 57.6 | paragraphIndent: 0 | paragraphSpacing: 0 | textCase: none
+font,h3,custom-fontStyle,Header level 3,fontSize: 24 | textDecoration: none | fontFamily: Mozilla Headline | fontWeight: 600 | fontStyle: normal | fontStretch: normal | letterSpacing: 1 | lineHeight: 28.8 | paragraphIndent: 0 | paragraphSpacing: 0 | textCase: none
+font,h4,custom-fontStyle,Header level 4,fontSize: 18 | textDecoration: none | fontFamily: Mozilla Headline | fontWeight: 500 | fontStyle: normal | fontStretch: normal | letterSpacing: 0 | lineHeight: 21.6 | paragraphIndent: 0 | paragraphSpacing: 0 | textCase: none
+font,h5,custom-fontStyle,Header 5,fontSize: 11 | textDecoration: none | fontFamily: IBM Plex Sans | fontWeight: 500 | fontStyle: normal | fontStretch: normal | letterSpacing: 2 | lineHeight: 13.2 | paragraphIndent: 0 | paragraphSpacing: 0 | textCase: uppercase
+font,body lg,custom-fontStyle,,fontSize: 16 | textDecoration: none | fontFamily: IBM Plex Sans | fontWeight: 400 | fontStyle: normal | fontStretch: normal | letterSpacing: 0 | lineHeight: 19.2 | paragraphIndent: 0 | paragraphSpacing: 0 | textCase: none
+font,body,custom-fontStyle,Defualt body style,fontSize: 14 | textDecoration: none | fontFamily: IBM Plex Sans | fontWeight: 400 | fontStyle: normal | fontStretch: normal | letterSpacing: 0 | lineHeight: 16.8 | paragraphIndent: 0 | paragraphSpacing: 0 | textCase: none
+font,body sm,custom-fontStyle,Body small,fontSize: 12 | textDecoration: none | fontFamily: IBM Plex Sans | fontWeight: 400 | fontStyle: normal | fontStretch: normal | letterSpacing: 0 | lineHeight: 14.4 | paragraphIndent: 0 | paragraphSpacing: 0 | textCase: none
+font,caption,custom-fontStyle,Captions,fontSize: 11 | textDecoration: none | fontFamily: IBM Plex Sans | fontWeight: 500 | fontStyle: normal | fontStretch: normal | letterSpacing: 0 | lineHeight: 13.2 | paragraphIndent: 0 | paragraphSpacing: 0 | textCase: none
+font,label,custom-fontStyle,"Buttons, labels, chips, pills",fontSize: 11 | textDecoration: none | fontFamily: IBM Plex Sans | fontWeight: 600 | fontStyle: normal | fontStretch: normal | letterSpacing: 2 | lineHeight: 13.2 | paragraphIndent: 0 | paragraphSpacing: 0 | textCase: uppercase
+spacing,primitive,,,
+spacing,space between,,,
+spacing,margin,,,
+spacing,radii,,,
+breakpoints,screen,,,
+breakpoints,grid columns,dimension,,12
+breakpoints,margin,dimension,,{spacing.primitive.lg0}
+breakpoints,gutter,dimension,,{spacing.primitive.sm0}
+colors,foundation,,,
+colors,surface,,,
+colors,text-and-icon,,,
+colors,interaction,,,
+colors,graphics,,,
+typography,size,,,
+typography,family,,,
+typography,weight,,,
+typography,spacing,,,
+typography,hero1,,The largest hero text,
+typography,hero2,,Very large display,
+typography,h1,,Very large display,
+typography,h2,,Header level 2,
+typography,h3,,Header level 3,
+typography,h4,,Header level 4,
+typography,h5,,Header 5,
+typography,body lg,,,
+typography,body,,Defualt body style,
+typography,body sm,,Body small,
+typography,caption,,Captions,
+typography,label,,"Buttons, labels, chips, pills",
+text strings,name,,,
+text strings,content,,,
+text strings,messages,,,
