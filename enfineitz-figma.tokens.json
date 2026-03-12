@@ -76,7 +76,7 @@
       "value": {
         "fontSize": 340,
         "textDecoration": "none",
-        "fontFamily": "Mozilla Headline Expanded",
+        "fontFamily": "Mozilla Headline",
         "fontWeight": 200,
         "fontStyle": "normal",
         "fontStretch": "normal",
@@ -99,7 +99,7 @@
       "value": {
         "fontSize": 128,
         "textDecoration": "none",
-        "fontFamily": "Mozilla Headline Expanded",
+        "fontFamily": "Mozilla Headline",
         "fontWeight": 300,
         "fontStyle": "normal",
         "fontStretch": "normal",
@@ -1714,7 +1714,7 @@
       },
       "fontFamily": {
         "type": "string",
-        "value": "Mozilla Headline Expanded"
+        "value": "Mozilla Headline"
       },
       "fontWeight": {
         "type": "number",
@@ -1761,7 +1761,7 @@
       },
       "fontFamily": {
         "type": "string",
-        "value": "Mozilla Headline Expanded"
+        "value": "Mozilla Headline"
       },
       "fontWeight": {
         "type": "number",
