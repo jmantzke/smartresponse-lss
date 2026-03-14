@@ -1,0 +1,38 @@
+{
+  "grid": {
+    "columns": {
+      "count": {
+        "small": { "$ref": "primitives.num-4" },
+        "medium": { "$ref": "primitives.num-8" },
+        "default": { "$ref": "primitives.num-12" }
+      }
+    },
+    "gutter": {
+      "xs": { "$ref": "primitives.num-4" },
+      "md": { "$ref": "primitives.num-16" },
+      "lg": { "$ref": "primitives.num-30" },
+      "xl": { "$ref": "primitives.num-48" }
+    },
+    "margin": {
+      "xs": { "$ref": "primitives.num-12" },
+      "md": { "$ref": "primitives.num-24" },
+      "lg": { "$ref": "primitives.num-32" }
+    },
+    "breakpoint": {
+      "xs": { "max": { "$ref": "primitives.num-479" } },
+      "sm": { "min": { "$ref": "primitives.num-480" }, "max": { "$ref": "primitives.num-767" } },
+      "md": { "min": { "$ref": "primitives.num-768" }, "max": { "$ref": "primitives.num-1023" } },
+      "lg": { "min": { "$ref": "primitives.num-1024" }, "max": { "$ref": "primitives.num-1439" } },
+      "xl": { "min": { "$ref": "primitives.num-1440" }, "max": { "$ref": "primitives.num-1920" } }
+    },
+    "container": {
+      "max": {
+        "sm": { "$ref": "primitives.num-480" },
+        "md": { "$ref": "primitives.num-768" },
+        "lg": { "$ref": "primitives.num-1024" },
+        "xl": { "$ref": "primitives.num-1440" },
+        "xxl": { "$ref": "primitives.num-1920" }
+      }
+    }
+  }
+}
