@@ -1,13 +1,13 @@
 {
-  "name": "smartresponse",
-  "version": "1.0.0",
-  "description": "LSS Demo Project",
+  "name": "design-tokens",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "sass": "sass style.scss style.css",
-    "sass:watch": "sass --watch style.scss:style.css",
-    "sass:build": "sass style.scss style.css --style=compressed"
+    "validate:schema": "ajv validate -s token-schema.json -d primitives.json",
+    "validate:refs": "node scripts/resolve-refs.js primitives.json semantic/grid.json semantic/type.json",
+    "validate": "npm run validate:schema && npm run validate:refs"
   },
   "devDependencies": {
-    "sass": "^1.70.0"
+    "ajv-cli": "^5.0.0"
   }
 }
