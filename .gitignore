@@ -28,5 +28,4 @@ update-colors.py
 verify-token-refs.py
 enfineitz-figma.tokens.json.backup
 enfineitz-figma.tokens.json.before-cleanup
-enfineitz-figma.tokens-tokenstudio.json
 AGT/email-template.html
