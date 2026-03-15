@@ -18,3 +18,15 @@ npm-debug.log*
 # Environment variables
 .env
 .env.local
+
+# Local working/scratch files
+clean-tokens-simple.py
+convert-to-token-studio.py
+fix-tokens.py
+restructure-for-token-studio.py
+update-colors.py
+verify-token-refs.py
+enfineitz-figma.tokens.json.backup
+enfineitz-figma.tokens.json.before-cleanup
+enfineitz-figma.tokens-tokenstudio.json
+AGT/email-template.html
