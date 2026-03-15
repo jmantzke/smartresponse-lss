@@ -8,7 +8,7 @@
         "^num-[0-9_]+$": {
           "type": "object",
           "properties": {
-            "value": { "type": ["number", "integer"] }
+            "value": { "type": "number" }
           },
           "required": ["value"],
           "additionalProperties": false

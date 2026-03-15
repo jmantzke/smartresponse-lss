@@ -20,7 +20,7 @@ function findRefs(obj, refs = []) {
 const args = process.argv.slice(2);
 if (args.length < 2) {
   console.error("Usage: node scripts/resolve-refs.js primitives.json semantic/*.json");
-  process.exit(2);
+  process.exit(1);
 }
 
 const primitivesFile = args[0];
@@ -28,7 +28,7 @@ const semanticFiles = args.slice(1);
 
 if (!fs.existsSync(primitivesFile)) {
   console.error("Primitives file not found:", primitivesFile);
-  process.exit(2);
+  process.exit(1);
 }
 
 const primitives = loadJson(primitivesFile).primitives || {};
