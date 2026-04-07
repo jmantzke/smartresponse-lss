@@ -1,0 +1,411 @@
+// _prototype.scss
+// Wireframe styles for the Wanderlust usability testing prototype.
+// All color values sourced exclusively from wireframe token variables in _colors.scss.
+// No shadows, no imagery, no brand color — greys only.
+
+@use 'colors' as *;
+@use 'spacing' as *;
+@use 'typography' as *;
+@use 'measurements' as *;
+@use 'layout' as *;
+
+// ─── Prototype page background ────────────────────────────────────────────────
+
+body.proto-page {
+  background-color: $wf-bg-page;
+}
+
+// ─── Site Header ─────────────────────────────────────────────────────────────
+
+.site-header {
+  width: 100%;
+  padding: $spacing-md $spacing-lg;
+  background-color: $wf-bg-inverse;
+  border-bottom: 1px solid $wf-border-emphasis;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $spacing-md;
+
+  &__title {
+    font-family: $font-heading-primary;
+    font-weight: $font-weight-100;
+    font-size: 1.25rem;
+    color: $wf-text-on-inverse;
+    letter-spacing: 0.02em;
+    margin: 0;
+  }
+
+  &__home {
+    // Compact sizing + inverse-surface colour overrides; base appearance from .btn
+    font-size: 0.8rem;
+    font-weight: $font-weight-400;
+    padding: 0.3rem 0.85rem;
+    flex-shrink: 0;
+    color: $wf-text-disabled;
+    border-color: $wf-border-emphasis;
+
+    &:hover {
+      background-color: $wf-border-emphasis;
+      color: $wf-text-on-inverse;
+      border-color: $wf-border-emphasis;
+    }
+  }
+}
+
+// ─── Page wrapper ─────────────────────────────────────────────────────────────
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: $spacing-lg $spacing-md;
+  gap: $spacing-lg;
+}
+
+// ─── Proto intro ──────────────────────────────────────────────────────────────
+
+.proto-intro {
+  width: 100%;
+  padding: $spacing-md;
+  background-color: $wf-bg-surface;
+  border: 1px solid $wf-border-default;
+  border-radius: 4px;
+
+  &__heading {
+    font-family: $font-body;
+    font-size: 0.7rem;
+    font-weight: $font-weight-500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $wf-text-secondary;
+    margin-bottom: $spacing-xs;
+  }
+
+  p {
+    font-family: $font-body;
+    font-size: 0.875rem;
+    color: $wf-text-body;
+    line-height: 1.6;
+    margin: 0;
+  }
+}
+
+// ─── Trip form ────────────────────────────────────────────────────────────────
+
+.trip-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+}
+
+// ─── Form field ───────────────────────────────────────────────────────────────
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xs;
+
+  &__label {
+    font-family: $font-body;
+    font-size: 0.8rem;
+    font-weight: $font-weight-500;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: $wf-text-primary;
+  }
+
+  &__input {
+    font-family: $font-body;
+    font-size: 1rem;
+    font-weight: $font-weight-300;
+    color: $wf-input-text;
+    background-color: $wf-input-bg;
+    border: 1px solid $wf-input-border;
+    border-radius: 4px;
+    padding: 0.65rem 0.9rem;
+    width: 100%;
+    transition: border-color 0.12s;
+
+    &::placeholder {
+      color: $wf-input-placeholder;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $wf-input-border-focus;
+      background-color: $wf-input-bg-focus;
+    }
+  }
+
+  &__slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 4px;
+    background: $wf-border-default;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    margin: $spacing-sm 0;
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: $wf-btn-primary-bg;
+      border: 2px solid $wf-btn-primary-border;
+      cursor: pointer;
+    }
+
+    &::-moz-range-thumb {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: $wf-btn-primary-bg;
+      border: 2px solid $wf-btn-primary-border;
+      cursor: pointer;
+    }
+  }
+}
+
+.form-field__slider-readout {
+  font-family: $font-body;
+  font-size: 1.5rem;
+  font-weight: $font-weight-300;
+  color: $wf-text-primary;
+  text-align: center;
+  display: block;
+}
+
+// ─── Buttons ──────────────────────────────────────────────────────────────────
+
+.btn {
+  display: inline-block;
+  font-family: $font-body;
+  font-size: 0.95rem;
+  font-weight: $font-weight-500;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.7rem 1.75rem;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.12s, border-color 0.12s, color 0.12s;
+  white-space: nowrap;
+
+  &--primary {
+    background-color: $wf-btn-primary-bg;
+    color: $wf-btn-primary-text;
+    border-color: $wf-btn-primary-border;
+
+    &:hover {
+      background-color: $wf-btn-primary-bg-hover;
+      border-color: $wf-btn-primary-bg-hover;
+    }
+  }
+
+  &--secondary {
+    background-color: $wf-btn-secondary-bg;
+    color: $wf-btn-secondary-text;
+    border-color: $wf-btn-secondary-border;
+
+    &:hover {
+      background-color: $wf-btn-secondary-bg-hover;
+    }
+  }
+
+  &:disabled,
+  &--disabled {
+    background-color: $wf-btn-disabled-bg;
+    color: $wf-btn-disabled-text;
+    border-color: $wf-btn-disabled-border;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
+
+.btn-group {
+  display: flex;
+  gap: $spacing-md;
+  flex-wrap: wrap;
+}
+
+.btn-container {
+  width: 100%;
+  display: flex;
+}
+
+// ─── Choice cards ─────────────────────────────────────────────────────────────
+
+.choice-cards {
+  display: flex;
+  gap: $spacing-md;
+  width: 100%;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
+}
+
+.choice-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: $spacing-sm;
+  padding: $spacing-lg $spacing-md;
+  background-color: $wf-bg-surface;
+  border: 2px solid $wf-border-default;
+  border-radius: 4px;
+  text-decoration: none;
+  color: $wf-text-body;
+  font-family: $font-body;
+  font-size: 0.95rem;
+  font-weight: $font-weight-400;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.12s, border-color 0.12s;
+
+  &:hover {
+    background-color: $wf-state-hover;
+    border-color: $wf-border-emphasis;
+    color: $wf-text-primary;
+  }
+
+  &__icon {
+    font-size: 2rem;
+    line-height: 1;
+    color: $wf-icon-subtle;
+  }
+
+  &__label {
+    font-weight: $font-weight-500;
+  }
+}
+
+// ─── Map placeholder ──────────────────────────────────────────────────────────
+
+.map-placeholder {
+  width: 100%;
+  height: 280px;
+  background-color: $wf-bg-surface;
+  border: 2px dashed $wf-border-strong;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $wf-text-placeholder;
+  font-family: $font-body;
+  font-size: 0.875rem;
+  font-weight: $font-weight-400;
+  letter-spacing: 0.04em;
+}
+
+// ─── Route cards ──────────────────────────────────────────────────────────────
+
+.route-cards {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-sm;
+  width: 100%;
+}
+
+.route-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $spacing-md;
+  padding: $spacing-md;
+  background-color: $wf-bg-surface;
+  border: 1px solid $wf-border-default;
+  border-radius: 4px;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  &__name {
+    font-family: $font-body;
+    font-size: 0.95rem;
+    font-weight: $font-weight-500;
+    color: $wf-text-body;
+  }
+
+  &__detail {
+    font-family: $font-body;
+    font-size: 0.8rem;
+    color: $wf-text-secondary;
+  }
+}
+
+// ─── Summary card ─────────────────────────────────────────────────────────────
+
+.summary-card {
+  width: 100%;
+  background-color: $wf-bg-surface;
+  border: 1px solid $wf-border-default;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: $spacing-sm $spacing-md;
+  border-bottom: 1px solid $wf-border-subtle;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &__label {
+    font-family: $font-body;
+    font-size: 0.75rem;
+    font-weight: $font-weight-500;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: $wf-text-secondary;
+  }
+
+  &__value {
+    font-family: $font-body;
+    font-size: 0.95rem;
+    font-weight: $font-weight-400;
+    color: $wf-text-body;
+  }
+}
+
+// ─── Page heading ─────────────────────────────────────────────────────────────
+
+.page-heading {
+  font-family: $font-heading-primary;
+  font-weight: $font-weight-100;
+  font-size: 1.75rem;
+  color: $wf-text-primary;
+  width: 100%;
+  margin: 0;
+}
+
+// ─── Site footer ──────────────────────────────────────────────────────────────
+
+.site-footer {
+  width: 100%;
+  padding: $spacing-md $spacing-lg;
+  text-align: center;
+  color: $wf-text-disabled;
+  font-family: $font-body;
+  font-size: 0.75rem;
+  border-top: 1px solid $wf-border-subtle;
+  margin-top: auto;
+}

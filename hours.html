@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <link rel="icon" type="image/x-icon" href="favicon.ico">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Daily Driving Hours — Wanderlust Travel App</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body class="proto-page">
+
+   <header class="site-header">
+      <h1 class="site-header__title">Wanderlust Travel App</h1>
+      <a class="btn site-header__home" href="index.html">Home</a>
+   </header>
+
+   <main class="page">
+
+      <h2 class="page-heading">How many hours per day do you want to drive?</h2>
+
+      <section class="trip-form">
+         <div class="form-field">
+            <label class="form-field__label" for="hours">Hours per day</label>
+            <span class="form-field__slider-readout" id="hours-readout">4 hours</span>
+            <input
+               class="form-field__slider"
+               type="range"
+               id="hours"
+               min="1"
+               max="12"
+               value="4"
+               aria-label="Hours per day"
+            >
+         </div>
+         <div class="btn-container">
+            <a class="btn btn--primary" href="map.html">Next</a>
+         </div>
+      </section>
+
+   </main>
+
+   <footer class="site-footer">
+      <p>&copy; 2026 Enfineitz LLC &mdash; Stanford Module 4 Prototype &middot; J. Mantzke</p>
+   </footer>
+
+   <script>
+      (function () {
+         var slider = document.getElementById('hours');
+         var readout = document.getElementById('hours-readout');
+         slider.addEventListener('input', function () {
+            var val = slider.value;
+            readout.textContent = val + (val === '1' ? ' hour' : ' hours');
+         });
+      }());
+   </script>
+
+</body>
+</html>

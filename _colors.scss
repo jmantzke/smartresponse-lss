@@ -54,3 +54,71 @@ $foundation-screens-darken-50: #000000;
 
 // Typography colors
 $body-on-dark: $foundation-neutral-neutral-60;
+
+// ── Wireframe Theme ───────────────────────────────────────────────────────────
+// All values sourced exclusively from the Neutral Colors set.
+
+// Backgrounds
+$wf-bg-page:          $foundation-neutral-neutral-10;   // #000000 — page canvas (dark mode)
+$wf-bg-surface:       $foundation-neutral-neutral-70;   // #d4d5d6 — cards, panels
+$wf-bg-surface-alt:   $foundation-neutral-neutral-60;   // #a9abac — inset / zebra rows
+$wf-bg-overlay:       $foundation-neutral-neutral-40;   // #535759 — modals, drawers
+$wf-bg-inverse:       $foundation-neutral-neutral-20;   // #1c1d1e — inverse surfaces
+$wf-bg-body:          $foundation-neutral-neutral-30;   // #373a3b — body backdrop
+
+// Typography
+$wf-text-primary:     $foundation-neutral-neutral-60;   // #a9abac — headings, emphasis (dark mode)
+$wf-text-body:        $foundation-neutral-neutral-20;   // #1c1d1e — body copy
+$wf-text-secondary:   $foundation-neutral-neutral-40;   // #535759 — secondary / captions
+$wf-text-placeholder: $foundation-neutral-neutral-50;   // #7e8183 — input placeholders
+$wf-text-disabled:    $foundation-neutral-neutral-60;   // #a9abac — disabled text
+$wf-text-on-inverse:  $foundation-neutral-neutral-80;   // #ffffff — text on dark surfaces
+
+// Borders
+$wf-border-subtle:    $foundation-neutral-neutral-70;   // #d4d5d6 — hairline dividers
+$wf-border-default:   $foundation-neutral-neutral-60;   // #a9abac — standard borders
+$wf-border-strong:    $foundation-neutral-neutral-50;   // #7e8183 — focused / prominent
+$wf-border-emphasis:  $foundation-neutral-neutral-30;   // #373a3b — high-contrast outlines
+
+// Buttons — Primary (filled)
+$wf-btn-primary-bg:         $foundation-neutral-neutral-20;   // #1c1d1e
+$wf-btn-primary-bg-hover:   $foundation-neutral-neutral-10;   // #000000
+$wf-btn-primary-text:       $foundation-neutral-neutral-80;   // #ffffff
+$wf-btn-primary-border:     $foundation-neutral-neutral-10;   // #000000
+
+// Buttons — Secondary (outlined)
+$wf-btn-secondary-bg:       $foundation-neutral-neutral-80;   // #ffffff
+$wf-btn-secondary-bg-hover: $foundation-neutral-neutral-70;   // #d4d5d6
+$wf-btn-secondary-text:     $foundation-neutral-neutral-20;   // #1c1d1e
+$wf-btn-secondary-border:   $foundation-neutral-neutral-40;   // #535759
+
+// Buttons — Ghost / subtle
+$wf-btn-ghost-bg:           transparent;
+$wf-btn-ghost-bg-hover:     $foundation-neutral-neutral-70;   // #d4d5d6
+$wf-btn-ghost-text:         $foundation-neutral-neutral-40;   // #535759
+$wf-btn-ghost-border:       $foundation-neutral-neutral-60;   // #a9abac
+
+// Buttons — Disabled (shared)
+$wf-btn-disabled-bg:        $foundation-neutral-neutral-70;   // #d4d5d6
+$wf-btn-disabled-text:      $foundation-neutral-neutral-60;   // #a9abac
+$wf-btn-disabled-border:    $foundation-neutral-neutral-70;   // #d4d5d6
+
+// Form inputs
+$wf-input-bg:               $foundation-neutral-neutral-80;   // #ffffff
+$wf-input-bg-focus:         $foundation-neutral-neutral-80;   // #ffffff
+$wf-input-border:           $foundation-neutral-neutral-60;   // #a9abac
+$wf-input-border-focus:     $foundation-neutral-neutral-30;   // #373a3b
+$wf-input-text:             $foundation-neutral-neutral-20;   // #1c1d1e
+$wf-input-placeholder:      $foundation-neutral-neutral-50;   // #7e8183
+
+// Icons & decorative fills
+$wf-icon-default:           $foundation-neutral-neutral-40;   // #535759
+$wf-icon-subtle:            $foundation-neutral-neutral-60;   // #a9abac
+$wf-icon-emphasis:          $foundation-neutral-neutral-20;   // #1c1d1e
+
+// States — conveyed through lightness only (no hue)
+$wf-state-hover:            $foundation-neutral-neutral-70;   // #d4d5d6
+$wf-state-active:           $foundation-neutral-neutral-60;   // #a9abac
+$wf-state-focus-ring:       $foundation-neutral-neutral-30;   // #373a3b
+$wf-state-selected-bg:      $foundation-neutral-neutral-50;   // #7e8183
+$wf-state-selected-text:    $foundation-neutral-neutral-80;   // #ffffff
