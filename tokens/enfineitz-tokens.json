@@ -4506,6 +4506,16 @@
           },
           "$value": 600,
           "$type": "number"
+        },
+        "manifesto-height": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "$value": 160,
+          "$type": "number"
         }
       },
       "corner-decoration-w-h": {
@@ -4867,6 +4877,16 @@
             "com.figma.hiddenFromPublishing": false
           },
           "$value": 700,
+          "$type": "number"
+        },
+        "manifesto-height": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "$value": 180,
           "$type": "number"
         }
       },
@@ -5230,6 +5250,16 @@
           },
           "$value": 800,
           "$type": "number"
+        },
+        "manifesto-height": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "$value": 300,
+          "$type": "number"
         }
       },
       "corner-decoration-w-h": {
@@ -5592,6 +5622,16 @@
           },
           "$value": 1000,
           "$type": "number"
+        },
+        "manifesto-height": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "$value": 420,
+          "$type": "number"
         }
       },
       "corner-decoration-w-h": {
@@ -5953,6 +5993,16 @@
             "com.figma.hiddenFromPublishing": false
           },
           "$value": 1000,
+          "$type": "number"
+        },
+        "manifesto-height": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "$value": 420,
           "$type": "number"
         }
       },

@@ -1,8 +1,8 @@
-import Image from 'next/image'
 import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import GlobalHeader from '@/components/GlobalHeader'
 import CornerDecoration from '@/components/CornerDecoration'
+import ManifestoImage from '@/components/ManifestoImage'
 import enfineitzContent from '@/content/enfineitz.json'
 
 // ─── What is Enfineitz? (Article template · Manifesto) ───────────────────────
@@ -58,7 +58,6 @@ export const metadata: Metadata = {
 const section = enfineitzContent.sections[0] as {
   paragraphs: string[]
   heading?: string
-  image: { src: string; alt: string }
 }
 
 export default function EnfineitzPage() {
@@ -184,18 +183,8 @@ function ManifestoContent({ className }: { className?: string }) {
         .filter(Boolean)
         .join(' ')}
     >
-      {/* Hero image */}
-      <div className="relative w-full h-[220px] sm:h-[320px] rounded-msm overflow-hidden shrink-0">
-        <Image
-          src={section.image.src}
-          alt={section.image.alt}
-          fill
-          priority
-          sizes="(max-width: 768px) 100vw, 1012px"
-          className="object-cover"
-          style={{ objectPosition: 'right bottom' }}
-        />
-      </div>
+      {/* Hero image — rotating captioned artwork */}
+      <ManifestoImage />
 
       {/* Manifesto body — indented, right-aligned within the content column */}
       <div className="flex flex-col items-end pl-64 w-full">
