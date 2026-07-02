@@ -177,7 +177,7 @@ export default function ManifestoImage({ className }: { className?: string }) {
         />
       </div>
 
-      <figcaption className="flex flex-col gap-16 items-end w-full max-w-[550px] text-right font-body font-normal text-[11px] leading-[16px] text-[var(--text-body)]">
+      <figcaption className="flex flex-col gap-16 items-end w-full max-w-[550px] text-left font-body font-normal text-[11px] leading-[16px] text-[var(--text-body)]">
         <p className="w-full">{slide.caption}</p>
         <p className="w-full">
           {DISCLAIMER_LINE_1}
