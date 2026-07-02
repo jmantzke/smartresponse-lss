@@ -189,7 +189,7 @@ function TwoColumnLayout() {
           {/* Rail bottom corner */}
           <div className="flex items-end w-full shrink-0">
             <CornerDecoration
-              position="bottom-right"
+              position="bottom-left"
               className="size-40 xl:size-48 shrink-0 pointer-events-none"
             />
           </div>
