@@ -177,13 +177,27 @@ export default function ManifestoImage({ className }: { className?: string }) {
         />
       </div>
 
-      <figcaption className="flex flex-col gap-16 items-end w-full max-w-[550px] text-left font-body font-normal text-[11px] leading-[16px] text-[var(--text-body)]">
-        <p className="w-full">{slide.caption}</p>
-        <p className="w-full">
-          {DISCLAIMER_LINE_1}
-          <br />
-          {DISCLAIMER_LINE_2}
-        </p>
+      <figcaption className="flex gap-8 items-start w-full max-w-[600px] font-body font-normal text-[11px] leading-[16px]">
+        <svg
+          className="w-[26px] h-[41px] shrink-0"
+          viewBox="0 0 26 41"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            d="M26 12.8904L24.6106 14.268H23.0994L13 4.2476L2.90062 14.268H1.38938L0 12.8904L10.855 2.1238L13 0L15.145 2.1238L26 12.8822V12.8904ZM11.4806 40.4014L12.0819 41H13.91L14.5113 40.4014V8.282H11.4806V40.4014Z"
+            fill="var(--text-header, #f39806)"
+          />
+        </svg>
+        <div className="flex flex-col gap-16 items-start flex-1 min-w-0 text-left">
+          <p className="w-full text-[var(--text-body)]">{slide.caption}</p>
+          <p className="w-full text-[var(--text-slash)]">
+            {DISCLAIMER_LINE_1}
+            <br />
+            {DISCLAIMER_LINE_2}
+          </p>
+        </div>
       </figcaption>
     </figure>
   )
