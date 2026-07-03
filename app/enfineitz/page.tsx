@@ -62,7 +62,7 @@ const section = enfineitzContent.sections[0] as {
 
 export default function EnfineitzPage() {
   return (
-    <div className="relative w-full min-h-screen bg-[var(--surface-page-alt)]">
+    <div className="relative w-full min-h-screen page-gradient">
       <StackedLayout />
       <TwoColumnLayout />
     </div>

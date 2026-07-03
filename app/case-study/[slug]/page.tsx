@@ -103,7 +103,7 @@ export default async function CaseStudyPage({
   ]
 
   return (
-    <div className="relative w-full min-h-screen bg-[var(--surface-page-alt)]">
+    <div className="relative w-full min-h-screen page-gradient">
       <StackedLayout title={study.pageTitle ?? study.title} blocks={blocks} />
       <TwoColumnLayout title={study.pageTitle ?? study.title} blocks={blocks} />
     </div>

@@ -114,6 +114,16 @@
   --crumb-active: #ffffff;
 }
 
+/* ─── Page background ─────────────────────────────────────────────────────────
+   Radial gradient from neutral.700 → neutral.900, anchored near the top-left. */
+.page-gradient {
+  background-image: radial-gradient(
+    farthest-corner at 200px 0px,
+    var(--color-neutral-700) 54%,
+    var(--color-neutral-900) 100%
+  );
+}
+
 /* ─── Social icons ───────────────────────────────────────────────────────────
    Rendered as CSS masks so the glyph is painted with `currentColor`, letting
    each icon inherit the link text color in every state (rest/hover) — matching

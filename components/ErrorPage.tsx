@@ -30,7 +30,7 @@ export default function ErrorPage({
   children,
 }: Props) {
   return (
-    <div className="relative flex flex-col min-h-screen w-full bg-[var(--surface-page-alt)]">
+    <div className="relative flex flex-col min-h-screen w-full page-gradient">
       <GlobalHeader />
 
       <main className="flex flex-1 items-center justify-center px-16 sm:px-24 py-48 w-full">

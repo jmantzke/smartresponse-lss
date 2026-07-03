@@ -47,7 +47,7 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <div className="relative w-full min-h-screen bg-[var(--surface-page-alt)]">
+    <div className="relative w-full min-h-screen page-gradient">
       <StackedLayout />
       <TwoColumnLayout />
     </div>
