@@ -112,6 +112,13 @@ const slides: ManifestoSlide[] = [
     caption: 'This image was drawn in Sketchbook Pro on an Amazon Fire Tablet.',
     position: 'center top',
   },
+  {
+    src: '/images/manifesto/cord-manifesto.png',
+    alt: 'A painting of a 1937 Cord Model 810 automobile',
+    caption:
+      'A Tintin-inspired 1937 Cord Model 810 or 812, painted with Sketchbook Pro on an Amazon Fire tablet, 2018.',
+    position: 'center',
+  },
 ]
 
 const DISCLAIMER_LINE_1 =
@@ -179,8 +186,9 @@ export default function ManifestoImage({ className }: { className?: string }) {
 
       <figcaption className="flex gap-8 items-start w-full max-w-[600px] font-body font-normal text-[11px] leading-[16px]">
         <svg
-          className="w-[26px] h-[41px] shrink-0"
+          className="w-[18px] h-[28px] shrink-0"
           viewBox="0 0 26 41"
+          preserveAspectRatio="none"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true"
