@@ -4575,6 +4575,18 @@
           "$value": 700,
           "$type": "number"
         }
+      },
+      "unique-icon": {
+        "height": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "$value": 16,
+          "$type": "number"
+        }
       }
     }
   },
@@ -4945,6 +4957,18 @@
             "com.figma.hiddenFromPublishing": false
           },
           "$value": 700,
+          "$type": "number"
+        }
+      },
+      "unique-icon": {
+        "height": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "$value": 16,
           "$type": "number"
         }
       }
@@ -5319,6 +5343,18 @@
           "$value": 700,
           "$type": "number"
         }
+      },
+      "unique-icon": {
+        "height": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "$value": 20,
+          "$type": "number"
+        }
       }
     }
   },
@@ -5691,6 +5727,18 @@
           "$value": 700,
           "$type": "number"
         }
+      },
+      "unique-icon": {
+        "height": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "$value": 28,
+          "$type": "number"
+        }
       }
     }
   },
@@ -6061,6 +6109,18 @@
             "com.figma.hiddenFromPublishing": false
           },
           "$value": 700,
+          "$type": "number"
+        }
+      },
+      "unique-icon": {
+        "height": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "$value": 28,
           "$type": "number"
         }
       }

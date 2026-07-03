@@ -186,7 +186,7 @@ export default function ManifestoImage({ className }: { className?: string }) {
 
       <figcaption className="flex gap-8 items-start w-full max-w-[600px] font-body font-normal text-[11px] leading-[16px]">
         <svg
-          className="w-[18px] h-[28px] shrink-0"
+          className="h-[16px] md:h-[20px] lg:h-[28px] aspect-[9/14] shrink-0"
           viewBox="0 0 26 41"
           preserveAspectRatio="none"
           fill="none"
