@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import CornerDecoration from '@/components/CornerDecoration'
+import { REVEAL_AT } from '@/components/headerReveal'
 
 // ─── GlobalHeader ─────────────────────────────────────────────────────────────
 // Horizontal header bar used by the Article and Case Study templates.
@@ -24,35 +25,72 @@ import CornerDecoration from '@/components/CornerDecoration'
 //   • corner deco:     30 (xs) · 32 (sm) · 40 (md/lg) · 48 (xl)
 //
 // Figma: global-header (213:349) · brand (956:3766) · scroll variants (169:240)
+//
+// `revealOnScroll` (home page): instead of being sticky, the header is fixed
+// and hidden just above the viewport. It slides in with easing once the page
+// has scrolled past REVEAL_AT (90px, see components/headerReveal.ts). Clicking
+// the brand — or anywhere on the header — smoothly scrolls back to the top, and
+// the header retracts off-screen as the scroll returns below the threshold.
+// Figma could not prototype this (the interaction/show-header token was the
+// placeholder for it). The home page's left-rail glyph shares REVEAL_AT to
+// cross-fade in sync (fades out as the header appears, back in on retract).
 
-export default function GlobalHeader() {
+export default function GlobalHeader({
+  revealOnScroll = false,
+}: {
+  revealOnScroll?: boolean
+} = {}) {
   const [scrolled, setScrolled] = useState(false)
+  const [revealed, setRevealed] = useState(false)
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 0)
+    const onScroll = () => {
+      const y = window.scrollY
+      setScrolled(y > 0)
+      if (revealOnScroll) setRevealed(y >= REVEAL_AT)
+    }
     onScroll() // sync initial state (e.g. when loaded already scrolled)
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
-  }, [])
+  }, [revealOnScroll])
+
+  // Reveal mode: clicking the header scrolls back to the top; the scroll
+  // listener then retracts the header once y drops below the threshold.
+  const scrollToTop = () => {
+    if (!revealOnScroll || !revealed) return
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 
   return (
     <header
+      onClick={revealOnScroll ? scrollToTop : undefined}
       className={[
-        'sticky top-0 z-30',
+        revealOnScroll
+          ? // Slide the header down from the top with a smooth, brief ease-out
+            // (easeOutCubic): quick to start, gently decelerating, no overshoot.
+            // The same transition runs in reverse when the header retracts.
+            // NB: Tailwind v4 `-translate-y-*` uses the CSS `translate` property
+            // (not the `transform` shorthand), so we transition `translate`.
+            'fixed top-0 left-0 right-0 z-30 cursor-pointer transition-[translate,border-color] duration-[250ms] ease-[cubic-bezier(0.33,1,0.68,1)]'
+          : 'sticky top-0 z-30 transition-colors duration-150',
+        // Reveal mode starts hidden above the viewport and slides to y=0.
+        revealOnScroll && !revealed ? '-translate-y-full' : 'translate-y-0',
         'flex items-start justify-between w-full shrink-0',
         'bg-[var(--surface-page-alt)]',
         // Keep a 1px border always to avoid layout shift; toggle its color so
         // the hairline only shows once scrolled (Scroll=False → transparent).
-        'border-b transition-colors duration-150',
+        'border-b',
         scrolled ? 'border-[#2a2f32]' : 'border-transparent',
       ].join(' ')}
       aria-label="Site header"
     >
       {/* Left: home link combining the glyph + brand label into one hover group.
-          The whole group (efz-glyph + ENFINEITZ label) links home. */}
+          The whole group (efz-glyph + ENFINEITZ label) links home. In reveal
+          mode we suppress navigation so the click just scrolls to the top. */}
       <Link
         href="/"
         aria-label="Enfineitz home"
+        onClick={revealOnScroll ? (e) => e.preventDefault() : undefined}
         className="group flex items-center gap-8 px-24 py-12 sm:py-16 md:py-24"
       >
         {/* Glyph: two-tone rest mark crossfades to an all-white mark on hover */}

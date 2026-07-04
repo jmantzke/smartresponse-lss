@@ -7,6 +7,8 @@ import CaseStudyCard from '@/components/CaseStudyCard'
 import Navigation from '@/components/Navigation'
 import CornerDecoration from '@/components/CornerDecoration'
 import CurrentYear from '@/components/CurrentYear'
+import GlobalHeader from '@/components/GlobalHeader'
+import HomeRailGlyph from '@/components/HomeRailGlyph'
 
 // ─── Home Page ─────────────────────────────────────────────────────────────────
 // Hub page — card grid of all case studies. Rebuilt to match the Figma
@@ -48,6 +50,7 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <div className="relative w-full min-h-screen page-gradient">
+      <GlobalHeader revealOnScroll />
       <StackedLayout />
       <TwoColumnLayout />
     </div>
@@ -189,7 +192,7 @@ function TwoColumnLayout() {
             'xl:min-w-[340px] xl:max-w-[340px]',
           ].join(' ')}
         >
-          <Glyph className="w-[124px] h-[121px] shrink-0" />
+          <HomeRailGlyph className="w-[124px] h-[121px] shrink-0" />
 
           <div className="w-full pr-16">
             <p

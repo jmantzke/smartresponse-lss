@@ -119,6 +119,13 @@ const slides: ManifestoSlide[] = [
       'A Tintin-inspired 1937 Cord Model 810 or 812, painted with Sketchbook Pro on an Amazon Fire tablet, 2018.',
     position: 'center',
   },
+  {
+    src: '/images/manifesto/FP-02-manifesto.png',
+    alt: 'An abstract 3D artwork of interwoven teal tubes',
+    caption:
+      'This was an early album cover concept for my music project, Fake Papoose. Created with Photoshop, Illustrator and Blender (my son), 2025.',
+    position: 'center',
+  },
 ]
 
 const DISCLAIMER_LINE_1 =

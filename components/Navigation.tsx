@@ -44,12 +44,17 @@ export default function Navigation({
       <SocialLink
         href="mailto:jurgen@enfineitz.com"
         iconClass="nav-social-icon--email"
-        label="jurgen@enfineitz.com"
+        label="Jürgen"
       />
       <SocialLink
         href="https://www.behance.net/bunyip21"
         iconClass="nav-social-icon--behance"
         label="Bēhance"
+      />
+      <SocialLink
+        href="https://soundcloud.com/jurgen-mantzke-752342688/sets/human-nature-is-europa?si=a304d0500a9f40dc86234604ccb8cd46&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+        iconClass="nav-social-icon--soundcloud"
+        label="Soundcloud"
       />
     </>
   )

@@ -2070,6 +2070,18 @@
           "$type": "number"
         }
       }
+    },
+    "interaction": {
+      "show-header": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "$value": "false",
+        "$type": "boolean"
+      }
     }
   },
   "color roles/dark mode": {
