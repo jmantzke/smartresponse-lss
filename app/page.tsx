@@ -142,6 +142,11 @@ function StackedLayout() {
               iconClass="nav-social-icon--behance"
               label="Bēhance"
             />
+            <ContactLink
+              href="https://soundcloud.com/jurgen-mantzke-752342688/sets/human-nature-is-europa?si=a6c7460b97e340aa99f938bd67302d89&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+              iconClass="nav-social-icon--soundcloud"
+              label="Soundcloud"
+            />
           </div>
         </div>
       </header>
@@ -163,7 +168,13 @@ function StackedLayout() {
 
 function TwoColumnLayout() {
   return (
-    <div className="relative hidden md:flex justify-center w-full min-h-screen">
+    // overflow-x-clip: the top-right corner uses `50vw` positioning, and CSS
+    // viewport units include the scrollbar-gutter width. Once the page scrolls
+    // vertically a classic scrollbar appears and pushes the corner ~½ a
+    // scrollbar-width past the content edge, creating a horizontal scrollbar.
+    // `clip` trims that sub-pixel overflow without creating a scroll container
+    // (so the sticky left rail keeps working).
+    <div className="relative hidden md:flex justify-center w-full min-h-screen overflow-x-clip">
       {/* Decorative page corners (viewport edges) */}
       <CornerDecoration
         position="top-left"
@@ -244,8 +255,9 @@ function TwoColumnLayout() {
             </p>
           </div>
 
-          {/* Card grid */}
-          <CardGrid className="gap-8" />
+          {/* Card grid — pb-48 (spacing.margin.xl) matches the Figma
+              card-grid frame's 48px bottom padding below the last row. */}
+          <CardGrid className="gap-8 pb-48" />
         </main>
       </div>
     </div>

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import CornerDecoration from '@/components/CornerDecoration'
-import { REVEAL_AT } from '@/components/headerReveal'
+import { revealTrigger } from '@/components/headerReveal'
 
 // ─── GlobalHeader ─────────────────────────────────────────────────────────────
 // Horizontal header bar used by the Article and Case Study templates.
@@ -28,7 +28,7 @@ import { REVEAL_AT } from '@/components/headerReveal'
 //
 // `revealOnScroll` (home page): instead of being sticky, the header is fixed
 // and hidden just above the viewport. It slides in with easing once the page
-// has scrolled past REVEAL_AT (90px, see components/headerReveal.ts). Clicking
+// has scrolled past REVEAL_AT (200px, see components/headerReveal.ts). Clicking
 // the brand — or anywhere on the header — smoothly scrolls back to the top, and
 // the header retracts off-screen as the scroll returns below the threshold.
 // Figma could not prototype this (the interaction/show-header token was the
@@ -47,11 +47,17 @@ export default function GlobalHeader({
     const onScroll = () => {
       const y = window.scrollY
       setScrolled(y > 0)
-      if (revealOnScroll) setRevealed(y >= REVEAL_AT)
+      // Reveal past the threshold; the 1px tolerance lets short pages (where the
+      // trigger collapses to the page bottom) still fire on fractional scroll.
+      if (revealOnScroll) setRevealed(y > 0 && y >= revealTrigger() - 1)
     }
     onScroll() // sync initial state (e.g. when loaded already scrolled)
     window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
+    window.addEventListener('resize', onScroll) // trigger depends on viewport/doc height
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+      window.removeEventListener('resize', onScroll)
+    }
   }, [revealOnScroll])
 
   // Reveal mode: clicking the header scrolls back to the top; the scroll

@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
-import { REVEAL_AT } from '@/components/headerReveal'
+import { revealTrigger } from '@/components/headerReveal'
 
 // Home page left-rail Enfineitz glyph. It cross-fades with the scroll-in
 // GlobalHeader: once the page scrolls past the header reveal threshold
@@ -13,10 +13,15 @@ export default function HomeRailGlyph({ className }: { className?: string }) {
   const [hidden, setHidden] = useState(false)
 
   useEffect(() => {
-    const onScroll = () => setHidden(window.scrollY >= REVEAL_AT)
+    const onScroll = () =>
+      setHidden(window.scrollY > 0 && window.scrollY >= revealTrigger() - 1)
     onScroll() // sync initial state (e.g. when loaded already scrolled)
     window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
+    window.addEventListener('resize', onScroll) // trigger depends on viewport/doc height
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+      window.removeEventListener('resize', onScroll)
+    }
   }, [])
 
   return (
