@@ -1,28 +1,16 @@
 [
   {
     "slug": "alaska-airlines-flight-attendant-training",
-    "title": "Alaska Airlines",
+    "title": "Flight Attendant Training",
+    "pageTitle": "Flight Attendant Training",
     "client": "Alaska Airlines",
     "role": "Lead UX Designer",
     "year": 2021,
     "published": true,
-    "tags": ["UX Design", "Enterprise UX", "Workflow Design"],
+    "tags": ["UX Design", "Enterprise UX", "Workflow Design", "Flight Attendant", "iPad Workplace Application", "Alaska Airlines"],
     "coverImage": "/images/abstract-tile-bkg-2.png",
     "coverAlt": "Alaska Airlines inflight recurrent training modernization",
-    "summary": "Inflight Recurrent Training Modernization"
-  },
-  {
-    "slug": "alaska-airlines-pilot-vacation-trading",
-    "title": "Alaska Airlines",
-    "pageTitle": "Pilot vacation trading feature",
-    "client": "Alaska Airlines",
-    "role": "Lead UX/UI Designer",
-    "year": 2020,
-    "published": true,
-    "tags": ["UX Design", "Mobile-First", "Enterprise UX"],
-    "coverImage": "/images/case-studies/alaska-airlines-pilot-vacation-trading/alaska-pvt-card-bkg.png",
-    "coverAlt": "Alaska Airlines pilot vacation trading feature",
-    "summary": "Pilot vacation trading feature"
+    "summary": "Alaska Airlines Inflight Recurrent Training"
   },
   {
     "slug": "ecommerce-branding-kit",
@@ -48,7 +36,20 @@
     "tags": ["UX Research", "AI-Powered UX", "Prototyping"],
     "coverImage": "/images/case-studies/wanderlist/wanderlist-card-bkg.png",
     "coverAlt": "Wanderlist AI-powered road trip planner",
-    "summary": "Stanford program capstone project"
+    "summary": "Stanford University program capstone project"
+  },
+    {
+    "slug": "alaska-airlines-pilot-vacation-trading",
+    "title": "Pilot Vacation Trading",
+    "pageTitle": "Pilot Vacation Trading Feature",
+    "client": "Alaska Airlines",
+    "role": "Lead UX/UI Designer",
+    "year": 2020,
+    "published": true,
+    "tags": ["UX Design", "Mobile-First", "Enterprise UX"],
+    "coverImage": "/images/case-studies/alaska-airlines-pilot-vacation-trading/alaska-pvt-card-bkg.png",
+    "coverAlt": "Alaska Airlines pilot vacation trading feature",
+    "summary": "Alaska Airlines Pilot Vacation Trading"
   },
   {
     "slug": "boeing-ngps-search",
@@ -61,8 +62,21 @@
     "tags": ["UX Design", "Enterprise UX", "Design Systems", "Boeing", "Military", "Aviation", "Maintenance", "Search", "Enterprise UX"],
     "coverImage": "/images/case-studies/boeing-ngps-search/boeing-ngps-card-bkg.png",
     "coverAlt": "Boeing NGPS Search maintenance record search",
-    "summary": "Maintenance record search",
+    "summary": "Military Aviation Maintenance Record Search",
     "ogImage": "/og/boeing-ngps-1.png"
+  },
+    {
+    "slug": "smart-response-geneva",
+    "title": "SmartResponse study",
+    "client": "SmartResponse — Disaster Accountability Project",
+    "role": "Volunteer UX Designer & Researcher",
+    "year": 2025,
+    "published": true,
+    "tags": ["UX Research", "Field Research", "Nonprofit UX", "Guerrilla Research", "Disaster Relief", "SmartResponse", "United Nations", "Geneva", "Disaster Accountability Project", "Usability Testing", "Ethnographic Studies"],
+    "coverImage": "/images/abstract-tile-bkg-8.png",
+    "coverAlt": "Guerrilla UX research for SmartResponse at the UN Global Platform for Disaster Risk Reduction in Geneva",
+    "summary": "Guerrilla User Research",
+    "ogImage": "/og/sr-geneva-2025.png"
   },
   {
     "slug": "ngps-aircraft-detail-redesign",
@@ -75,7 +89,7 @@
     "tags": ["UX Design", "Enterprise UX", "Data Visualization", "US Navy Aviation", "Marine Corps Aviation", "Military Aviation Maintenance", "F/A-18", "Boeing"],
     "coverImage": "/images/abstract-tile-bkg-7.png",
     "coverAlt": "NGPS Aircraft detail maintenance data display",
-    "summary": "Maintenance data display",
+    "summary": "Military Aviation Maintenance Data Display",
     "ogImage": "/og/boeing-ngps-2.png"
   },
   {
@@ -88,20 +102,7 @@
     "tags": ["UX Design", "Enterprise UX", "Mobile-First", "Flight attendant", "Alaska Airlines","Personal drop request", "Airline business"],
     "coverImage": "/images/case-studies/alaska-airlines-personal-drop-request/alaska-pdr-card-bkg.png",
     "coverAlt": "Alaska Airlines Personal Drop Request feature for flight attendants",
-    "summary": "Alaska Airlines flight attendants",
+    "summary": "Alaska Airlines Flight Attendants",
     "ogImage": "/og/alaska-FA-PDR.png"
-  },
-  {
-    "slug": "smart-response-geneva",
-    "title": "SmartResponse study",
-    "client": "SmartResponse — Disaster Accountability Project",
-    "role": "Volunteer UX Designer & Researcher",
-    "year": 2025,
-    "published": true,
-    "tags": ["UX Research", "Field Research", "Nonprofit UX", "Guerrilla Research", "Disaster Relief", "SmartResponse", "United Nations", "Geneva", "Disaster Accountability Project", "Usability Testing", "Ethnographic Studies"],
-    "coverImage": "/images/abstract-tile-bkg-8.png",
-    "coverAlt": "Guerrilla UX research for SmartResponse at the UN Global Platform for Disaster Risk Reduction in Geneva",
-    "summary": "Guerrilla user research",
-    "ogImage": "/og/sr-geneva-2025.png"
   }
 ]
