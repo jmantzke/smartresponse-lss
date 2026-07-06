@@ -9,6 +9,7 @@ import CornerDecoration from '@/components/CornerDecoration'
 import CurrentYear from '@/components/CurrentYear'
 import GlobalHeader from '@/components/GlobalHeader'
 import HomeRailGlyph from '@/components/HomeRailGlyph'
+import HomeRevealShift from '@/components/HomeRevealShift'
 
 // ─── Home Page ─────────────────────────────────────────────────────────────────
 // Hub page — card grid of all case studies. Rebuilt to match the Figma
@@ -205,19 +206,28 @@ function TwoColumnLayout() {
         >
           <HomeRailGlyph className="w-[124px] h-[121px] shrink-0" />
 
-          <div className="w-full pr-16">
-            <p
-              className={[
-                'font-body font-medium',
-                'text-[12px] leading-[22px] tracking-normal',
-                'text-[var(--text-body)]',
-              ].join(' ')}
-            >
-              {bioData.brandSummary}
-            </p>
-          </div>
+          {/* When the GlobalHeader descends and the glyph fades out, the text +
+              vertical nav rise so their top sits 110px from the viewport top
+              (rest top = pt-64 64 + glyph 121 + gap-24 24 = 209 → shift -99px).
+              Eased with the header's descend curve. */}
+          <HomeRevealShift
+            className="flex flex-col gap-24 items-start w-full transition-[translate] duration-[250ms] ease-[cubic-bezier(0.33,1,0.68,1)]"
+            shift="translate-y-[-99px]"
+          >
+            <div className="w-full pr-16">
+              <p
+                className={[
+                  'font-body font-medium',
+                  'text-[12px] leading-[22px] tracking-normal',
+                  'text-[var(--text-body)]',
+                ].join(' ')}
+              >
+                {bioData.brandSummary}
+              </p>
+            </div>
 
-          <Navigation displayCaseStudies={false} />
+            <Navigation displayCaseStudies={false} />
+          </HomeRevealShift>
 
           <CornerDecoration
             position="bottom-right"

@@ -52,7 +52,7 @@ export default function Navigation({
         label="Bēhance"
       />
       <SocialLink
-        href="https://soundcloud.com/jurgen-mantzke-752342688/sets/human-nature-is-europa?si=a304d0500a9f40dc86234604ccb8cd46&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+        href="https://soundcloud.com/jurgen-mantzke-752342688/sets/human-nature-is-europa?si=a6c7460b97e340aa99f938bd67302d89&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
         iconClass="nav-social-icon--soundcloud"
         label="Soundcloud"
       />

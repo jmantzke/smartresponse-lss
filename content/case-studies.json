@@ -90,5 +90,18 @@
     "coverAlt": "Alaska Airlines Personal Drop Request feature for flight attendants",
     "summary": "Alaska Airlines flight attendants",
     "ogImage": "/og/alaska-FA-PDR.png"
+  },
+  {
+    "slug": "smart-response-geneva",
+    "title": "SmartResponse study",
+    "client": "SmartResponse — Disaster Accountability Project",
+    "role": "Volunteer UX Designer & Researcher",
+    "year": 2025,
+    "published": true,
+    "tags": ["UX Research", "Field Research", "Nonprofit UX", "Guerrilla Research", "Disaster Relief", "SmartResponse", "United Nations", "Geneva", "Disaster Accountability Project", "Usability Testing", "Ethnographic Studies"],
+    "coverImage": "/images/abstract-tile-bkg-8.png",
+    "coverAlt": "Guerrilla UX research for SmartResponse at the UN Global Platform for Disaster Risk Reduction in Geneva",
+    "summary": "Guerrilla user research",
+    "ogImage": "/og/sr-geneva-2025.png"
   }
 ]

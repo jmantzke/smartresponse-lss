@@ -5,6 +5,7 @@ import wanderlist from './wanderlist.json'
 import boeingNgpsSearch from './boeing-ngps-search.json'
 import ngpsAircraftDetailRedesign from './ngps-aircraft-detail-redesign.json'
 import alaskaPersonalDropRequest from './alaska-airlines-personal-drop-request.json'
+import smartResponseGeneva from './smart-response-geneva.json'
 
 // ─── Case study content block types ─────────────────────────────────────────
 // Each case study's body is authored as a JSON file of content blocks. The
@@ -19,7 +20,8 @@ export type HeroBlock = {
 export type SummaryBlock = {
   type: 'summary'
   subtitle: string
-  body: string
+  // A single paragraph (string) or several paragraphs (array of strings).
+  body: string | string[]
 }
 
 export type GalleryFigure = {
@@ -65,6 +67,7 @@ const contentBySlug: Record<string, CaseStudyContentData> = {
     ngpsAircraftDetailRedesign as CaseStudyContentData,
   'alaska-airlines-personal-drop-request':
     alaskaPersonalDropRequest as CaseStudyContentData,
+  'smart-response-geneva': smartResponseGeneva as CaseStudyContentData,
 }
 
 export function getCaseStudyContent(

@@ -1,0 +1,205 @@
+{
+  "slug": "smart-response-geneva",
+  "title": "SmartResponse study",
+  "content": [
+    {
+      "type": "hero",
+      "image": {
+        "src": "/images/case-studies/smart-response-geneva/smart-response-lss.png",
+        "alt": "SmartResponse Location Specific Survey shown on an organization admin screen with a service-radius map of Bulgaria",
+        "aspect": "3000/720"
+      }
+    },
+    {
+      "type": "summary",
+      "subtitle": "Guerrilla UX Research at the United Nations Global Platform for Disaster Risk Reduction",
+      "body": [
+        "SmartResponse is the public platform of the Disaster Accountability Project, a nonprofit dedicated to making disaster relief more transparent, efficient, and equitable. The organization’s mission is anchored in a sobering statistic: less than two percent of disaster‑related donations reach affected communities. SmartResponse attempts to raise that number by connecting donors directly with vetted, locally operating organizations. To do this effectively, the platform relies on two onboarding surveys: the General Organization Background (GOB) and the Location Specific Survey (LSS), which determine how organizations appear to donors and how credible their information seems.",
+        "When I joined as a volunteer UX designer, the founder asked me to redesign these surveys. They were long, confusing, and redundant, and they caused abandonment when organizations needed visibility the most. Personas existed, but they were provisional. The founder’s mental model of the Organization Point of Contact persona was essentially a single goal: the administrator needed a way to raise funds. Other data, such as age, education, digital maturity, frustrations, workflows, was blank. To redesign the onboarding experience responsibly, we needed real behavioral and contextual insight. That required field research."
+      ]
+    },
+    {
+      "type": "gallery",
+      "figures": [
+        {
+          "src": "/images/case-studies/smart-response-geneva/sr-gob-before.png",
+          "alt": "The original General Organization Background survey, Step 1, before the redesign",
+          "aspect": "2494/2042",
+          "caption": "The original GOB survey, Step 1"
+        },
+        {
+          "src": "/images/case-studies/smart-response-geneva/gob-step-1-demo.png",
+          "alt": "The redesigned prototype for Step 1 of the General Organization Background survey",
+          "aspect": "1000/1287",
+          "caption": "The prototype for the GOB survey"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "Constraints and strategic approach",
+      "paragraphs": [
+        "I led the redesign end‑to‑end, completing roughly ninety‑seven percent of the survey design work. Almost all decisions were shaped by constraints: limited volunteer hours, slow velocity due to turnover, tooling paid for through charity or my employer, and scarce access to real users. Remote interviews were impractical for many SmartResponse organizations, and surveys or video calls would not capture the cultural semantics or infrastructural realities that shape disaster‑relief workflows. In 2025, an opportunity emerged to test with real users at a global conference, so I paid my own way to conduct guerrilla user research onsite.",
+        "Before the trip, I conducted a heuristic audit of the existing flows, walked through the GOB and LSS surveys, interviewed the founder, and mapped the onboarding funnel. We hypothesized that chunking the forms, clarifying progression cues, and designing flexible inputs would reduce friction. However, these were still assumptions, because they were not validated personas."
+      ]
+    },
+    {
+      "type": "gallery",
+      "figures": [
+        {
+          "src": "/images/case-studies/smart-response-geneva/un-geneva-cigg.png",
+          "alt": "The exterior of the Centre International de Conférences Genève with UN and Swiss flags",
+          "aspect": "1200/630",
+          "caption": "The conference location: Centre International de Conférences, Geneva, Switzerland"
+        },
+        {
+          "src": "/images/case-studies/smart-response-geneva/personas-2023-5.png",
+          "alt": "The intended, un-validated Organization Point of Contact persona used to plan the research",
+          "aspect": "3000/1688",
+          "caption": "Our intended un-validated persona for this research"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "Designing research for scarcity",
+      "paragraphs": [
+        "The United Nations Global Platform for Disaster Risk Reduction, held at the Centre International de Conférences Genève (CICG), was a unique opportunity. Many SmartResponse organizations would be present, and the conference environment concentrated the target persona in one location. My initial plan was to schedule one‑hour sessions in nearby coffee shops, but the CICG building itself changed everything. The venue had abundant space, with quiet corners, mezzanines, and open seating areas, which proved perfect for impromptu usability sessions. Most attendees remained inside the building for the entire day, which simplified recruitment and eliminated the need to coordinate offsite meetings.",
+        "I prepared a culturally neutral test plan, a screening survey, a conversational interview script, and lightweight prototypes built by volunteers. The prototypes were configured specifically for the tasks in the script, using our existing design system to reduce overhead. Two volunteers helped assemble them quickly, even though they were new to SmartResponse. I provided documentation and scripts to ensure the flows matched the research goals."
+      ]
+    },
+    {
+      "type": "gallery",
+      "figures": [
+        {
+          "src": "/images/case-studies/smart-response-geneva/un-geneva-cicg-interior.png",
+          "alt": "One of the expansive interior conference halls of the CICG with tiered red seating",
+          "aspect": "1200/400",
+          "caption": "One of many expansive interiors of the conference center"
+        },
+        {
+          "src": "/images/case-studies/smart-response-geneva/interview-3.png",
+          "alt": "A guerrilla usability session in progress at the conference venue",
+          "aspect": "1546/979"
+        },
+        {
+          "src": "/images/case-studies/smart-response-geneva/interview-2.png",
+          "alt": "Facilitating a usability interview while taking notes at the conference",
+          "aspect": "1546/979",
+          "caption": "I had to be both a facilitator and scribe in most of the interviews"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "Field facilitation at the UN conference",
+      "paragraphs": [
+        "Over four days, we conducted nine interviews, which were statistically meaningful for usability testing under real‑world constraints. The founder, who knew many of the organizations attending, was able to accurately screen participants. We recruited test volunteers through casual introductions between lectures, using badge information to confirm they matched the Organization Point of Contact persona. The screening survey became lightweight because his domain knowledge handled most of the filtering.",
+        "Facilitation required flexibility. I opened each session with conversational background questions to gauge English proficiency and comfort. When cultural semantics differed from expectations, I reframed questions on the fly. In one session, we used Google Translate to interview a Portuguese‑speaking participant. Despite the translation overhead, we captured meaningful data. Some sessions extended to two hours due to rich discussions about workflows, constraints, and mental models.",
+        "The cognitive load of facilitating and note‑taking alone was significant. Without additional volunteers, I captured about twenty percent of the possible data. I slowed conversations to take notes, kept the script open in front of me, and gently steered participants back to tasks when discussions diverged. The CICG environment made this manageable; its layout supported quiet, semi‑private conversations without the logistical friction of moving between locations."
+      ]
+    },
+    {
+      "type": "gallery",
+      "figures": [
+        {
+          "src": "/images/case-studies/smart-response-geneva/sr-09172021-wireframe.jpg",
+          "alt": "Early wireframes of the Location Survey drawn before mockups and prototypes",
+          "aspect": "2828/3597"
+        },
+        {
+          "src": "/images/case-studies/smart-response-geneva/sr-09292021.jpg",
+          "alt": "A spread of early Location Survey wireframes exploring layout and flow",
+          "aspect": "4096/2568",
+          "caption": "Earlier wireframes of the Location Survey, before mockups and prototypes were designed"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "What we discovered",
+      "paragraphs": [
+        "The most impactful insights contradicted the founder’s original persona. Many organizations lacked banking infrastructure, making online donations impossible. This often would prevent a donor from simply clicking a link to send funds. If we had shipped the redesign with a required donation‑link field, most organizations would have left it blank, undermining their visibility and credibility.",
+        "We also learned that smartphones were the primary device for many participants, not laptops. Network conditions varied widely; older computers, WLAN, and 5G cellular networks were common, while reliable broadband was not. Heavy pages and large assets would reduce usability and adoption. Digital presence relied on YouTube, Instagram, X, and LinkedIn rather than formal websites. TikTok was considered non‑credible for disaster relief. Semantic differences affected how labels and fields were interpreted, reinforcing the need for localization‑ready inputs.",
+        "These findings transformed the persona from a one‑line assumption into a multidimensional profile shaped by global diversity, infrastructural constraints, and resource scarcity."
+      ]
+    },
+    {
+      "type": "gallery",
+      "figures": [
+        {
+          "src": "/images/case-studies/smart-response-geneva/usability-testing-geneva-01.png",
+          "alt": "The designer, a Portuguese-speaking organization admin, and SmartResponse founder Ben Smilowitz during a user interview",
+          "aspect": "4032/2344",
+          "caption": "Myself, an org admin who spoke Portuguese, and Ben Smilowitz, SmartResponse founder, during user interviews"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "Synthesis and prioritization",
+      "paragraphs": [
+        "All notes were captured in a structured spreadsheet, wherein each participant was represented in a row, and each research question in a column. This became our single source of truth. In a workshop with the founder, we imported prototype screenshots into FigJam and annotated each screen with findings. We debated persona gaps, prioritized UX strategies, and translated insights into t‑shirt‑sized tasks. These tasks were added to GitHub, organized into milestones and epics, ensuring continuity across volunteer turnover."
+      ]
+    },
+    {
+      "type": "gallery",
+      "figures": [
+        {
+          "src": "/images/case-studies/smart-response-geneva/lss-original-survey.png",
+          "alt": "The original Location Specific Survey, which had a number of usability issues",
+          "aspect": "4096/2638",
+          "caption": "The original location survey had a lot of user issues"
+        },
+        {
+          "src": "/images/case-studies/smart-response-geneva/step11-09-a.png",
+          "alt": "A prototype of the updated Location Specific Survey used in usability testing",
+          "aspect": "2000/2996",
+          "caption": "A prototype of the updated location survey which was tested"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "Design response",
+      "paragraphs": [
+        "The V2 redesign focused on resilience, clarity, and global diversity. We chunked long forms into smaller steps, clarified progression cues, strengthened inline validation, and designed localization‑ready labels. Address formats became flexible. Financial fields became optional. The UI became bandwidth‑conscious and mobile‑friendly. A component library ensured consistency across future volunteer contributions."
+      ]
+    },
+    {
+      "type": "gallery",
+      "figures": [
+        {
+          "src": "/images/case-studies/smart-response-geneva/geneva-cicg-guerrilla-findings-1.png",
+          "alt": "A summary board of the guerrilla research findings gathered at the CICG in Geneva",
+          "aspect": "3536/1556"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "Impact and forward strategy",
+      "paragraphs": [
+        "Because SmartResponse is still evolving, impact is framed as next steps: implementing V2 changes, measuring completion rates after release, refining the persona, scaling guerrilla research at future events, improving research capacity, and rehearsing session timing. The most strategic outcome was a pivot in the platform’s long‑term vision. Our discovery about donation infrastructure led us to explore alternative funding pathways that do not rely on banks or online payment systems. This reframes SmartResponse from a platform that displays donation links to one that helps donors fund organizations even when traditional financial systems do not exist."
+      ]
+    },
+    {
+      "type": "gallery",
+      "figures": [
+        {
+          "src": "/images/case-studies/smart-response-geneva/lss-components.png",
+          "alt": "The redesigned Location Specific Survey built with the SmartResponse component library",
+          "aspect": "3760/2006",
+          "caption": "Findings from the field studies were applied to improve the usability of onboarding surveys, such as this location survey, built with local components"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "Reflections",
+      "paragraphs": [
+        "This project reinforced the value of opportunistic research, global diversity, and designing for infrastructural constraints. It highlighted the importance of documentation for continuity and the need for additional volunteers during field studies. It also reaffirmed my own personal principle: pro bono work matters. Some of the most important problems a UX designer can solve have almost no budget but enormous impact. This trip shaped how I will conduct future field research and strengthened my identity as a UX strategist capable of operating in ambiguous, resource‑scarce environments."
+      ]
+    }
+  ]
+}

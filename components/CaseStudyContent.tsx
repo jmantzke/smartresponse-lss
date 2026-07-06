@@ -48,11 +48,23 @@ export default function CaseStudyContent({
                     {block.subtitle}
                   </p>
                 )}
-                {block.body && (
-                  <p className="font-body font-normal text-[14px] leading-[30px] max-w-[700px] w-full">
-                    {block.body}
-                  </p>
-                )}
+                {block.body &&
+                  (Array.isArray(block.body) ? (
+                    <div className="max-w-[700px] w-full">
+                      {block.body.map((para, pi) => (
+                        <p
+                          key={pi}
+                          className="font-body font-normal text-[14px] leading-[30px] mb-12 last:mb-0"
+                        >
+                          {para}
+                        </p>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="font-body font-normal text-[14px] leading-[30px] max-w-[700px] w-full">
+                      {block.body}
+                    </p>
+                  ))}
               </div>
             )
 
