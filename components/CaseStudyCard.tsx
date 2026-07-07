@@ -78,8 +78,9 @@ export default function CaseStudyCard({
             {title}
           </h3>
 
-          {/* Subtitle — ibm-plex-sans Regular, font-size/30 (14px), leading 30 */}
-          <p className="font-body font-normal text-[14px] leading-[30px]">
+          {/* Subtitle — Figma "Card-label": ibm-plex-sans Regular, font-size/30
+              (14px), line-height/card-sub (18px). */}
+          <p className="font-body font-normal text-[14px] leading-[18px]">
             {summary}
           </p>
         </div>

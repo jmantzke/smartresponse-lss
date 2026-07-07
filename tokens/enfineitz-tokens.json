@@ -3885,6 +3885,16 @@
         },
         "$value": 2,
         "$type": "number"
+      },
+      "card-sub": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "$value": "{spacing.primitive.md18}",
+        "$type": "number"
       }
     },
     "letter-spacing": {
