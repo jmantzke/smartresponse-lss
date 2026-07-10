@@ -80,7 +80,7 @@ function StackedLayout() {
       />
 
       {/* ── Header ── */}
-      <header className="flex flex-col gap-24 w-full px-8 py-24 sm:p-16">
+      <header className="flex flex-col gap-24 w-full px-12 py-24 sm:p-16">
         {/* Brand: glyph + wordmark + slogan */}
         <div className="flex gap-4 sm:gap-16 items-start">
           <Glyph className="w-[32px] h-[31px] sm:w-[60px] sm:h-[58px] shrink-0" />
@@ -126,6 +126,11 @@ function StackedLayout() {
           >
             <PageLink href="/bio">About me</PageLink>
             <PageLink href="/enfineitz">What is Enfineitz?</PageLink>
+            <ContactLink
+              href="https://www.upwork.com/freelancers/enfineitz"
+              iconClass="nav-social-icon--upwork"
+              label="Upwork"
+            />
           </nav>
           <div className="flex flex-col gap-16 items-start flex-1 min-w-[8.75rem]">
             <ContactLink
@@ -136,7 +141,7 @@ function StackedLayout() {
             <ContactLink
               href="mailto:jurgen@enfineitz.com"
               iconClass="nav-social-icon--email"
-              label="jurgen@enfineitz.com"
+              label="Jürgen"
             />
             <ContactLink
               href="https://www.behance.net/bunyip21"
@@ -153,7 +158,7 @@ function StackedLayout() {
       </header>
 
       {/* ── Card grid ── */}
-      <CardGrid className="gap-8 px-8 py-16 sm:p-16" />
+      <CardGrid className="gap-8 px-12 py-16 sm:p-16" />
 
       {/* ── Copyright ── */}
       <p className="py-16 font-body font-normal text-[11px] leading-none text-[var(--text-caption)] whitespace-nowrap">

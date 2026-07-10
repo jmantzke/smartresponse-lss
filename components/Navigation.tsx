@@ -31,6 +31,11 @@ export default function Navigation({
       {displayAbout && <NavLink href="/bio">About me</NavLink>}
       {displayManifesto && <NavLink href="/enfineitz">What is Enfineitz?</NavLink>}
       {displayCaseStudies && <NavLink href="/">Case studies</NavLink>}
+      <SocialLink
+        href="https://www.upwork.com/freelancers/enfineitz"
+        iconClass="nav-social-icon--upwork"
+        label="Upwork"
+      />
     </nav>
   )
 

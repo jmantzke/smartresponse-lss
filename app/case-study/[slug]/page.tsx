@@ -126,7 +126,7 @@ function StackedLayout({
       <GlobalHeader />
 
       {/* Title block — horizontal navigation + page title */}
-      <div className="flex flex-col gap-24 items-start px-8 sm:px-16 w-full">
+      <div className="flex flex-col gap-24 items-start px-12 sm:px-16 w-full">
         <Navigation layout="horizontal" showCopyright={false} />
         <PageTitle
           title={title}
@@ -135,7 +135,7 @@ function StackedLayout({
       </div>
 
       {/* Below — case study content */}
-      <div className="relative flex flex-col flex-1 items-center p-8 sm:p-16 w-full">
+      <div className="relative flex flex-col flex-1 items-center px-12 py-8 sm:p-16 w-full">
         <CornerDecoration
           position="top-right"
           className="absolute top-0 right-0 size-30 sm:size-32 pointer-events-none"

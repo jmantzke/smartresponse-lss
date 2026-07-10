@@ -91,13 +91,13 @@ function StackedLayout() {
       <GlobalHeader />
 
       {/* Title block — horizontal navigation + page title */}
-      <div className="flex flex-col gap-24 items-start px-8 sm:px-16 w-full">
+      <div className="flex flex-col gap-24 items-start px-12 sm:px-16 w-full">
         <Navigation layout="horizontal" displayAbout={false} showCopyright={false} />
         <PageTitle className="font-display text-[24px] font-[600] sm:text-[48px] sm:font-[200] tracking-[0.01em] sm:tracking-tight" />
       </div>
 
       {/* Below — portrait + bio, certificates, site credit */}
-      <div className="relative flex flex-col flex-1 items-center p-8 sm:p-16 w-full">
+      <div className="relative flex flex-col flex-1 items-center px-12 py-8 sm:p-16 w-full">
         <CornerDecoration
           position="top-right"
           className="absolute top-0 right-0 size-30 sm:size-32 pointer-events-none"

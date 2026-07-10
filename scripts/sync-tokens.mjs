@@ -329,6 +329,10 @@ const cssFooter = `
   -webkit-mask-image: url('/icons/soundcloud.svg');
   mask-image: url('/icons/soundcloud.svg');
 }
+.nav-social-icon--upwork {
+  -webkit-mask-image: url('/icons/upwork.svg');
+  mask-image: url('/icons/upwork.svg');
+}
 
 /* ─── Page background ─────────────────────────────────────────────────────────
    Radial gradient from neutral.700 → neutral.900, anchored near the top-left. */
