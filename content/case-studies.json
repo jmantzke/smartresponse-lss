@@ -7,7 +7,7 @@
     "role": "Lead UX Designer",
     "year": 2025,
     "published": true,
-    "tags": ["UX Research", "Design Systems", "Boeing", "Enterprise UX", "Atmosphere Design Language System", "AI-Enabled UX", "Design System Adoption"],
+    "tags": ["UX Research", "Design Systems", "Boeing", "Enterprise UX", "Atmosphere Design Language System", "AI-Enabled UX", "Design System Adoption", "UX strategy", "Figma", "Aerospace"],
     "coverImage": "/images/case-studies/atmosphere-adoption-study/atmosphere-adoption-card-bkg.png",
     "coverAlt": "Atmosphere Design Language System adoption study for Boeing product teams",
     "summary": "Design system adoption study",
@@ -21,7 +21,7 @@
     "role": "Lead UX Designer",
     "year": 2021,
     "published": true,
-    "tags": ["UX Design", "Enterprise UX", "Workflow Design", "Flight Attendant", "iPad Workplace Application", "Alaska Airlines"],
+    "tags": ["UX Design", "Enterprise UX", "Workflow Design", "Flight Attendant", "iPad Workplace Application", "Alaska Airlines", "Recurrent training", "Mobile-First", "737", "Airbus A320"],
     "coverImage": "/images/abstract-tile-bkg-2.png",
     "coverAlt": "Alaska Airlines inflight recurrent training modernization",
     "summary": "Alaska Airlines Inflight Recurrent Training"
