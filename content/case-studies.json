@@ -1,5 +1,19 @@
 [
   {
+    "slug": "atmosphere-adoption-study",
+    "title": "Atmosphere adoption",
+    "pageTitle": "Atmosphere Design System Adoption Study",
+    "client": "Boeing",
+    "role": "Lead UX Designer",
+    "year": 2025,
+    "published": true,
+    "tags": ["UX Research", "Design Systems", "Boeing", "Enterprise UX", "Atmosphere Design Language System", "AI-Enabled UX", "Design System Adoption"],
+    "coverImage": "/images/case-studies/atmosphere-adoption-study/atmosphere-adoption-card-bkg.png",
+    "coverAlt": "Atmosphere Design Language System adoption study for Boeing product teams",
+    "summary": "Design system adoption study",
+    "ogImage": "/og/atmosphere-adoption.png"
+  },
+  {
     "slug": "alaska-airlines-flight-attendant-training",
     "title": "Flight Attendant Training",
     "pageTitle": "Flight Attendant Training",

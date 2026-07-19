@@ -6,6 +6,7 @@ import boeingNgpsSearch from './boeing-ngps-search.json'
 import ngpsAircraftDetailRedesign from './ngps-aircraft-detail-redesign.json'
 import alaskaPersonalDropRequest from './alaska-airlines-personal-drop-request.json'
 import smartResponseGeneva from './smart-response-geneva.json'
+import atmosphereAdoptionStudy from './atmosphere-adoption-study.json'
 
 // ─── Case study content block types ─────────────────────────────────────────
 // Each case study's body is authored as a JSON file of content blocks. The
@@ -68,6 +69,8 @@ const contentBySlug: Record<string, CaseStudyContentData> = {
   'alaska-airlines-personal-drop-request':
     alaskaPersonalDropRequest as CaseStudyContentData,
   'smart-response-geneva': smartResponseGeneva as CaseStudyContentData,
+  'atmosphere-adoption-study':
+    atmosphereAdoptionStudy as CaseStudyContentData,
 }
 
 export function getCaseStudyContent(

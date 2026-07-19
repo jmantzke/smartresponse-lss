@@ -93,7 +93,7 @@ function StackedLayout() {
       {/* Title block — horizontal navigation + page title */}
       <div className="flex flex-col gap-24 items-start px-12 sm:px-16 w-full">
         <Navigation layout="horizontal" displayAbout={false} showCopyright={false} />
-        <PageTitle className="font-display text-[24px] font-[600] sm:text-[48px] sm:font-[200] tracking-[0.01em] sm:tracking-tight" />
+        <PageTitle className="font-display text-[32px] font-[600] sm:text-[48px] sm:font-[200] tracking-[1px] sm:tracking-tight" />
       </div>
 
       {/* Below — portrait + bio, certificates, site credit */}
@@ -146,7 +146,7 @@ function TwoColumnLayout() {
 
       {/* Title — centered, capped per breakpoint */}
       <div className="w-full max-w-[1023px] lg:max-w-[1375px] xl:max-w-[1376px] px-16 lg:px-32 xl:px-0">
-        <PageTitle className="font-display text-[60px] font-[200] tracking-tight" />
+        <PageTitle className="font-display text-[60px] font-[200] tracking-tight xl:text-[96px] xl:tracking-tighter" />
       </div>
 
       {/* Top-right corner of the body */}
@@ -212,12 +212,12 @@ function TwoColumnLayout() {
 function PageTitle({ className }: { className?: string }) {
   return (
     <div
-      className={['flex items-center gap-4 leading-none whitespace-nowrap', className]
+      className={['flex items-start gap-4 leading-none', className]
         .filter(Boolean)
         .join(' ')}
     >
-      <span className="text-[var(--text-slash)]">/</span>
-      <span className="text-[var(--text-header-reversed)]">{bioData.name}</span>
+      <span className="shrink-0 whitespace-nowrap text-[var(--text-slash)]">/</span>
+      <span className="min-w-0 text-[var(--text-header-reversed)]">{bioData.name}</span>
     </div>
   )
 }

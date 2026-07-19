@@ -1,0 +1,175 @@
+{
+  "slug": "atmosphere-adoption-study",
+  "title": "Atmosphere Design System Adoption Study",
+  "content": [
+    {
+      "type": "hero",
+      "image": {
+        "src": "/images/case-studies/atmosphere-adoption-study/atmosphere-adoption-study-2025.png",
+        "alt": "Atmosphere Design Language System adoption study cover banner",
+        "aspect": "1500/360"
+      }
+    },
+    {
+      "type": "summary",
+      "subtitle": "Onboarding product teams from Digital Aviation Services and Boeing Global Services, and charting the path to AI-enabled design, 2025",
+      "body": ""
+    },
+    {
+      "type": "gallery",
+      "figures": [
+        {
+          "src": "/images/case-studies/atmosphere-adoption-study/slide02-03-colorsystem.png",
+          "alt": "Slide from the Q1 2025 report introducing the Atmosphere color system",
+          "aspect": "4096/2304"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "Context and purpose",
+      "paragraphs": [
+        "The Atmosphere Design Language System is a proprietary design system built to scale across Boeing's enterprise digital products, from flight operations tools to Jeppesen ForeFlight. An outside vendor built it, but its research never captured how Boeing's product teams actually worked day to day, since the vendor moved on once contracted requirements were met.",
+        "My goal was to close the gap: learn how teams across Digital Aviation Services (DAS) and Boeing Global Services (BGS) were designing and shipping products, how designers and developers were collaborating, and what the system needed to earn adoption. The scope also included a quality assurance pass, stress-testing components and verifying tokens were used as intended. I created the report the vendor had left out."
+      ]
+    },
+    {
+      "type": "gallery",
+      "figures": [
+        {
+          "src": "/images/case-studies/atmosphere-adoption-study/atmosphere-case-study-whiteboard.png",
+          "alt": "Whiteboard summarizing three months of notes from product team meetings",
+          "aspect": "1587/911",
+          "caption": "After three months of meeting with product teams, notes were summarized."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "Research scope and participation",
+      "paragraphs": [
+        "I recruited 12 product teams across North America and Europe, drawn from Boeing's full UX designer roster and a shortlist of early-adopter teams. Each team joined a biweekly, hour-long series across the first quarter of 2025, covering mental models, pain points, and what teams wanted from an enterprise system.",
+        "I invited product owners and front-end developers to every session, but participation was sparse. Nearly all the sustained engagement came from UX designers, which revealed a lot about where design-system ownership sits inside a large engineering organization."
+      ]
+    },
+    {
+      "type": "gallery",
+      "figures": [
+        {
+          "src": "/images/case-studies/atmosphere-adoption-study/starter-kit-gantt.png",
+          "alt": "Gantt chart pattern from a Boeing product team's Starterkit exploration",
+          "aspect": "3840/2400",
+          "caption": "A gantt chart was a more common pattern unique to an aerospace manufacturer."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "Methods and approach",
+      "paragraphs": [
+        "Each session let conversation move organically around one or two topics and the team's real product screens. About halfway through each series, we rebuilt an actual screen using pure Atmosphere components and design system variables.",
+        "The model for the whole study was formed around this: I watched for where designers reached for an override, detached a component, or built something custom, and noted it in my research log."
+      ]
+    },
+    {
+      "type": "gallery",
+      "figures": [
+        {
+          "src": "/images/case-studies/atmosphere-adoption-study/atmosphere-misuse.png",
+          "alt": "Example of the Atmosphere glass effect breaking visually when misapplied",
+          "aspect": "2276/1796",
+          "caption": "The glass effect when not applied properly"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "Key findings and themes",
+      "paragraphs": [
+        "The detach-and-override pattern exposed a deep confusion around component semantics, the same pattern carried different names on different teams, and designers often built local components Atmosphere had not yet addressed.",
+        "Pain points recurred across nearly every team: restrictive color usage, an unforgiving glass effect that broke visually when the wrong token sat beneath it, and documentation that was good but largely undiscovered. Tables emerged as the single most important component, with strong demand for zebra striping, nested tables, and sorting.",
+        "A live poll of roughly 15 designers at a Boeing UX Center of Excellence meeting reinforced the pattern: most were early in their design-system literacy, but eager to both use and contribute to the system."
+      ]
+    },
+    {
+      "type": "gallery",
+      "figures": [
+        {
+          "src": "/images/case-studies/atmosphere-adoption-study/home-dm-full-nav-lg.png",
+          "alt": "Early StarterKit concept showing data-rich cards in dark mode with full navigation",
+          "aspect": "3801/2400",
+          "caption": "Data-rich cards were a common and popular component, as this early StarterKit concept demonstrates."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "Strategy development",
+      "paragraphs": [
+        "Synthesis workshops across all 12 team series, plus the poll data, led to the conclusion: Boeing's teams needed a gradual, low-friction adoption model, not a mandate, scaling up from tokens rather than forcing full adoption on day one, launching selectively, running office hours, and simplifying components rather than only adding to them.",
+        "The most consequential bet was the Starterkit, a living, twinned resource in Figma and code giving teams pre-configured page templates with correct tokens, breakpoints, light and dark modes, and two density settings applied. It solved the documentation problem and the example problem at once."
+      ]
+    },
+    {
+      "type": "gallery",
+      "figures": [
+        {
+          "src": "/images/case-studies/atmosphere-adoption-study/donut-68-components.png",
+          "alt": "Donut chart of survey results for the 68 components rated by Jeppesen ForeFlight designers and developers",
+          "aspect": "945/803"
+        },
+        {
+          "src": "/images/case-studies/atmosphere-adoption-study/donut-36-components.png",
+          "alt": "Donut chart of survey results for the 36 components not yet in Atmosphere",
+          "aspect": "1039/814"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "Follow-up study: AI and component adoption",
+      "paragraphs": [
+        "The Q1 study surfaced something larger than a components backlog: design work itself was starting to change shape as AI tooling entered teams' workflows. I ran a second study in Q3 2025: bi-weekly interviews (transcribed through Condens, an AI-first research repository platform), a survey of Jeppesen ForeFlight designers and developers on 68 components, and Figma library analytics.",
+        "Adoption climbed steadily, from 19 to 23 active teams between September and December, led by the Tapestry MRO team, though teams mostly used Atmosphere as a source of tokens rather than a finished library. The survey confirmed the gap: 70% of the 68 components were rated \"must have,\" including 61% of the 36 not yet in Atmosphere. Teams saw AI tools like Figma Make as useful for prototypes but not trusted for production code.",
+        "The combination of usage data, a quantified gap, and a clear AI signal, reframed the roadmap: an OKR to onboard Atmosphere users to AI-enabled workflows, closing the component and handoff gaps at once."
+      ]
+    },
+    {
+      "type": "gallery",
+      "figures": [
+        {
+          "src": "/images/case-studies/atmosphere-adoption-study/starter-kit-kpis-table.png",
+          "alt": "Starterkit page templates shown across five breakpoints and navigation configurations",
+          "aspect": "4096/3072",
+          "caption": "The starter kit offered common components in five different breakpoints and navigation configurations."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "Outcomes and influence",
+      "paragraphs": [
+        "These two studies combined data to plan a 2026 roadmap for product growth: expanding the component library toward industry parity, and treating documentation as demonstrated examples rather than written pages. The larger outcome was a reframed north star, measuring success by how reliably the system's tokens and finished, quality-assured components could be consumed downstream, by developers and, increasingly, by AI tooling and MCP-connected pipelines."
+      ]
+    },
+    {
+      "type": "gallery",
+      "figures": [
+        {
+          "src": "/images/case-studies/atmosphere-adoption-study/value-proposition-summary.png",
+          "alt": "Summary slide articulating the value proposition of an AI-native design system",
+          "aspect": "4096/3271",
+          "caption": "I studied ways to articulate the value of an AI-native design system."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "Reflections and learnings",
+      "paragraphs": [
+        "Design-system adoption inside an enterprise the size of Boeing is a negotiation between three value propositions: product owners want release-cycle velocity, developers want simplicity, and designers want expressive freedom. A system earns adoption only when it demonstrates value on all three fronts, which is why the Starterkit worked and a components-only strategy would not have.",
+        "Working on the Starterkit also surfaced best practices for growing a design system alongside AI tooling: shift from a visual library to a structured system with clear, semantic naming; build with auto layout wherever possible; give every component a stated purpose and description, useful to AI tools reading the system; and keep the file structure clean. The strongest AI-assisted workflow happens when design tokens map directly to the engineering system beneath them."
+      ]
+    }
+  ]
+}

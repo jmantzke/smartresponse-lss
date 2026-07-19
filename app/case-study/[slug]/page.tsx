@@ -130,7 +130,7 @@ function StackedLayout({
         <Navigation layout="horizontal" showCopyright={false} />
         <PageTitle
           title={title}
-          className="font-display text-[24px] font-[600] sm:text-[48px] sm:font-[200] tracking-[0.01em] sm:tracking-tight"
+          className="font-display text-[32px] font-[600] sm:text-[48px] sm:font-[200] tracking-[1px] sm:tracking-tight"
         />
       </div>
 
@@ -172,7 +172,7 @@ function TwoColumnLayout({
       <div className="w-full max-w-[1023px] lg:max-w-none xl:max-w-[1376px] px-16 lg:px-32 xl:px-0">
         <PageTitle
           title={title}
-          className="font-display text-[60px] font-[200] tracking-tight"
+          className="font-display text-[60px] font-[200] tracking-tight xl:text-[96px] xl:tracking-tighter"
         />
       </div>
 
@@ -238,12 +238,12 @@ function PageTitle({
 }) {
   return (
     <div
-      className={['flex items-center gap-4 leading-none whitespace-nowrap', className]
+      className={['flex items-start gap-4 leading-none', className]
         .filter(Boolean)
         .join(' ')}
     >
-      <span className="text-[var(--text-slash)]">/</span>
-      <span className="text-[var(--text-header-reversed)]">{title}</span>
+      <span className="shrink-0 whitespace-nowrap text-[var(--text-slash)]">/</span>
+      <span className="min-w-0 text-[var(--text-header-reversed)]">{title}</span>
     </div>
   )
 }
