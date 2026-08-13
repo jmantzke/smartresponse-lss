@@ -1,19 +1,5 @@
 [
   {
-    "slug": "atmosphere-adoption-study",
-    "title": "Atmosphere adoption",
-    "pageTitle": "Atmosphere Design System Adoption Study",
-    "client": "Boeing",
-    "role": "Lead UX Designer",
-    "year": 2025,
-    "published": true,
-    "tags": ["UX Research", "Design Systems", "Boeing", "Enterprise UX", "Atmosphere Design Language System", "AI-Enabled UX", "Design System Adoption", "UX strategy", "Figma", "Aerospace"],
-    "coverImage": "/images/case-studies/atmosphere-adoption-study/atmosphere-adoption-card-bkg.png",
-    "coverAlt": "Atmosphere Design Language System adoption study for Boeing product teams",
-    "summary": "Design system adoption study",
-    "ogImage": "/og/atmosphere-adoption.png"
-  },
-  {
     "slug": "alaska-airlines-flight-attendant-training",
     "title": "Flight Attendant Training",
     "pageTitle": "Flight Attendant Training",
@@ -25,45 +11,6 @@
     "coverImage": "/images/abstract-tile-bkg-2.png",
     "coverAlt": "Alaska Airlines inflight recurrent training modernization",
     "summary": "Alaska Airlines Inflight Recurrent Training"
-  },
-  {
-    "slug": "ecommerce-branding-kit",
-    "title": "AGT",
-    "pageTitle": "E-commerce branding kit",
-    "client": "American Gold Trading",
-    "role": "Lead UX & Brand Designer",
-    "year": 2025,
-    "published": true,
-    "tags": ["Branding", "Design Systems", "Accessibility"],
-    "coverImage": "/images/case-studies/ecommerce-branding-kit/agt-card-bkg.png",
-    "coverAlt": "American Gold Trading e-commerce branding kit",
-    "summary": "E-commerce Branding Kit"
-  },
-  {
-    "slug": "wanderlist",
-    "title": "Wanderlist app",
-    "pageTitle": "Wanderlist",
-    "client": "Stanford Capstone Project",
-    "role": "Solo UX Designer & Researcher",
-    "year": 2026,
-    "published": true,
-    "tags": ["UX Research", "AI-Powered UX", "Prototyping"],
-    "coverImage": "/images/case-studies/wanderlist/wanderlist-card-bkg.png",
-    "coverAlt": "Wanderlist AI-powered road trip planner",
-    "summary": "Stanford University program capstone project"
-  },
-    {
-    "slug": "alaska-airlines-pilot-vacation-trading",
-    "title": "Pilot Vacation Trading",
-    "pageTitle": "Pilot Vacation Trading Feature",
-    "client": "Alaska Airlines",
-    "role": "Lead UX/UI Designer",
-    "year": 2020,
-    "published": true,
-    "tags": ["UX Design", "Mobile-First", "Enterprise UX"],
-    "coverImage": "/images/case-studies/alaska-airlines-pilot-vacation-trading/alaska-pvt-card-bkg.png",
-    "coverAlt": "Alaska Airlines pilot vacation trading feature",
-    "summary": "Alaska Airlines Pilot Vacation Trading"
   },
   {
     "slug": "boeing-ngps-search",
@@ -79,18 +26,72 @@
     "summary": "Military Aviation Maintenance Record Search",
     "ogImage": "/og/boeing-ngps-1.png"
   },
-    {
-    "slug": "smart-response-geneva",
-    "title": "SmartResponse study",
-    "client": "SmartResponse — Disaster Accountability Project",
-    "role": "Volunteer UX Designer & Researcher",
+  {
+    "slug": "ecommerce-branding-kit",
+    "title": "AGT",
+    "pageTitle": "E-commerce branding kit",
+    "client": "American Gold Trading",
+    "role": "Lead UX & Brand Designer",
     "year": 2025,
     "published": true,
-    "tags": ["UX Research", "Field Research", "Nonprofit UX", "Guerrilla Research", "Disaster Relief", "SmartResponse", "United Nations", "Geneva", "Disaster Accountability Project", "Usability Testing", "Ethnographic Studies"],
-    "coverImage": "/images/abstract-tile-bkg-8.png",
-    "coverAlt": "Guerrilla UX research for SmartResponse at the UN Global Platform for Disaster Risk Reduction in Geneva",
-    "summary": "Guerrilla User Research",
-    "ogImage": "/og/sr-geneva-2025.png"
+    "tags": ["Branding", "Design Systems", "Accessibility"],
+    "coverImage": "/images/case-studies/ecommerce-branding-kit/agt-card-bkg.png",
+    "coverAlt": "American Gold Trading e-commerce branding kit",
+    "summary": "E-commerce Branding Kit"
+  },
+  {
+    "slug": "alaska-airlines-pilot-vacation-trading",
+    "title": "Pilot Vacation Trading",
+    "pageTitle": "Pilot Vacation Trading Feature",
+    "client": "Alaska Airlines",
+    "role": "Lead UX/UI Designer",
+    "year": 2020,
+    "published": true,
+    "tags": ["UX Design", "Mobile-First", "Enterprise UX"],
+    "coverImage": "/images/case-studies/alaska-airlines-pilot-vacation-trading/alaska-pvt-card-bkg.png",
+    "coverAlt": "Alaska Airlines pilot vacation trading feature",
+    "summary": "Alaska Airlines Pilot Vacation Trading"
+  },
+  {
+    "slug": "atmosphere-adoption-study",
+    "title": "Atmosphere adoption",
+    "pageTitle": "Atmosphere Design System Adoption Study",
+    "client": "Boeing",
+    "role": "Lead UX Designer",
+    "year": 2025,
+    "published": true,
+    "tags": ["UX Research", "Design Systems", "Boeing", "Enterprise UX", "Atmosphere Design Language System", "AI-Enabled UX", "Design System Adoption", "UX strategy", "Figma", "Aerospace"],
+    "coverImage": "/images/case-studies/atmosphere-adoption-study/atmosphere-adoption-card-bkg.png",
+    "coverAlt": "Atmosphere Design Language System adoption study for Boeing product teams",
+    "summary": "Design system adoption study",
+    "ogImage": "/og/atmosphere-adoption.png"
+  },
+  {
+    "slug": "hitachi-data-reduction-estimator",
+    "title": "Hitachi DRE",
+    "pageTitle": "Hitachi Data Reduction Estimator",
+    "client": "Hitachi Data Systems",
+    "role": "UX Designer",
+    "year": 2016,
+    "published": true,
+    "tags": ["UX Design", "Enterprise UX", "Data Visualization", "Hitachi", "Enterprise Software", "Wireframing", "International UX", "Adobe Illustrator", "Data Center", "Storage Software"],
+    "coverImage": "/images/case-studies/hitachi-dre/hitachi-dre-card-bkg.png",
+    "coverAlt": "Hitachi Data Reduction Estimator GUI wizard for enterprise storage administrators",
+    "summary": "Turning a command line into a story a data-center admin could read",
+    "ogImage": "/og/hitachi-dre-og.png"
+  },
+  {
+    "slug": "alaska-airlines-personal-drop-request",
+    "title": "Personal Drop Request",
+    "client": "Alaska Airlines",
+    "role": "Lead UX Designer",
+    "year": 2020,
+    "published": true,
+    "tags": ["UX Design", "Enterprise UX", "Mobile-First", "Flight attendant", "Alaska Airlines","Personal drop request", "Airline business"],
+    "coverImage": "/images/case-studies/alaska-airlines-personal-drop-request/alaska-pdr-card-bkg.png",
+    "coverAlt": "Alaska Airlines Personal Drop Request feature for flight attendants",
+    "summary": "Alaska Airlines Flight Attendants",
+    "ogImage": "/og/alaska-FA-PDR.png"
   },
   {
     "slug": "ngps-aircraft-detail-redesign",
@@ -107,16 +108,29 @@
     "ogImage": "/og/boeing-ngps-2.png"
   },
   {
-    "slug": "alaska-airlines-personal-drop-request",
-    "title": "Personal Drop Request",
-    "client": "Alaska Airlines",
-    "role": "Lead UX Designer",
-    "year": 2020,
+    "slug": "wanderlist",
+    "title": "Wanderlist app",
+    "pageTitle": "Wanderlist",
+    "client": "Stanford Capstone Project",
+    "role": "Solo UX Designer & Researcher",
+    "year": 2026,
     "published": true,
-    "tags": ["UX Design", "Enterprise UX", "Mobile-First", "Flight attendant", "Alaska Airlines","Personal drop request", "Airline business"],
-    "coverImage": "/images/case-studies/alaska-airlines-personal-drop-request/alaska-pdr-card-bkg.png",
-    "coverAlt": "Alaska Airlines Personal Drop Request feature for flight attendants",
-    "summary": "Alaska Airlines Flight Attendants",
-    "ogImage": "/og/alaska-FA-PDR.png"
+    "tags": ["UX Research", "AI-Powered UX", "Prototyping"],
+    "coverImage": "/images/case-studies/wanderlist/wanderlist-card-bkg.png",
+    "coverAlt": "Wanderlist AI-powered road trip planner",
+    "summary": "Stanford University program capstone project"
+  },
+  {
+    "slug": "smart-response-geneva",
+    "title": "SmartResponse study",
+    "client": "SmartResponse — Disaster Accountability Project",
+    "role": "Volunteer UX Designer & Researcher",
+    "year": 2025,
+    "published": true,
+    "tags": ["UX Research", "Field Research", "Nonprofit UX", "Guerrilla Research", "Disaster Relief", "SmartResponse", "United Nations", "Geneva", "Disaster Accountability Project", "Usability Testing", "Ethnographic Studies"],
+    "coverImage": "/images/abstract-tile-bkg-8.png",
+    "coverAlt": "Guerrilla UX research for SmartResponse at the UN Global Platform for Disaster Risk Reduction in Geneva",
+    "summary": "Guerrilla User Research",
+    "ogImage": "/og/sr-geneva-2025.png"
   }
 ]

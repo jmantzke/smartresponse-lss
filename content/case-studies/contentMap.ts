@@ -7,6 +7,7 @@ import ngpsAircraftDetailRedesign from './ngps-aircraft-detail-redesign.json'
 import alaskaPersonalDropRequest from './alaska-airlines-personal-drop-request.json'
 import smartResponseGeneva from './smart-response-geneva.json'
 import atmosphereAdoptionStudy from './atmosphere-adoption-study.json'
+import hitachiDataReductionEstimator from './hitachi-data-reduction-estimator.json'
 
 // ─── Case study content block types ─────────────────────────────────────────
 // Each case study's body is authored as a JSON file of content blocks. The
@@ -43,7 +44,9 @@ export type SectionParagraph = string | { subheading: string }
 
 export type SectionBlock = {
   type: 'section'
-  heading: string
+  // Omit to continue a preceding section's heading (e.g. when a gallery
+  // splits one section's copy into two consecutive blocks).
+  heading?: string
   paragraphs: SectionParagraph[]
 }
 
@@ -71,6 +74,8 @@ const contentBySlug: Record<string, CaseStudyContentData> = {
   'smart-response-geneva': smartResponseGeneva as CaseStudyContentData,
   'atmosphere-adoption-study':
     atmosphereAdoptionStudy as CaseStudyContentData,
+  'hitachi-data-reduction-estimator':
+    hitachiDataReductionEstimator as CaseStudyContentData,
 }
 
 export function getCaseStudyContent(

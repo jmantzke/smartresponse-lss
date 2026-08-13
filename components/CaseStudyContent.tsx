@@ -101,9 +101,11 @@ export default function CaseStudyContent({
                 key={i}
                 className="flex flex-col gap-16 items-start w-full text-[var(--text-body)]"
               >
-                <h2 className="font-display font-[600] text-[24px] leading-normal tracking-[1px] w-full">
-                  {block.heading}
-                </h2>
+                {block.heading && (
+                  <h2 className="font-display font-[600] text-[24px] leading-normal tracking-[1px] w-full">
+                    {block.heading}
+                  </h2>
+                )}
                 <div className="max-w-[700px] w-full">
                   {block.paragraphs.map((para, pi) =>
                     typeof para === 'string' ? (
