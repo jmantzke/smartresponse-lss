@@ -1,25 +1,41 @@
 name: Validate Tokens
+
 on:
   pull_request:
     paths:
-      - 'primitives.json'
-      - 'semantic/**'
-      - 'token-schema.json'
+      - 'tokens/enfineitz-tokens.json'
+      - 'scripts/sync-tokens.mjs'
+      - 'app/globals.css'
+      - 'tailwind.config.js'
+
 jobs:
   validate:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
+
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          node-version: '18'
+          node-version: '20'
+          cache: 'npm'
+
       - name: Install dependencies
         run: npm ci
-      - name: Validate primitives schema
-        run: npm run validate:schema
-      - name: Validate semantic references
-        run: npm run validate:refs
+
+      - name: Validate token file is well-formed JSON
+        run: node -e "JSON.parse(require('fs').readFileSync('tokens/enfineitz-tokens.json', 'utf8'))"
+
+      - name: Regenerate tokens
+        run: npm run tokens
+
+      - name: Verify generated files are in sync
+        run: |
+          if ! git diff --exit-code -- app/globals.css tailwind.config.js; then
+            echo "::error::Generated token output is out of date. Run 'npm run tokens' and commit app/globals.css and tailwind.config.js."
+            exit 1
+          fi
